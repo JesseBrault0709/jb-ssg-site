@@ -1,8 +1,9 @@
 ---
 package com.jessebrault.site
 ---
-<html lang='en'>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
         <title><%= renderTitle() %></title>
     </head>
     <body>
