@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+}
+
+rootProject.name = 'jb-ssg-site'
+

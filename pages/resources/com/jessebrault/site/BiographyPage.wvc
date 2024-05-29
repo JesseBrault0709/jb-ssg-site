@@ -1,0 +1,13 @@
+---
+package com.jessebrault.site
+---
+<html lang='en'>
+    <head>
+        <title><%= renderTitle() %></title>
+    </head>
+    <body>
+        <article>
+            <%= renderBiography() %>
+        </article>
+    </body>
+</html>

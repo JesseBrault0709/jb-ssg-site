@@ -1,0 +1,31 @@
+package com.jessebrault.site
+
+import com.jessebrault.site.util.TitleMaker
+import com.jessebrault.ssg.di.InjectText
+import com.jessebrault.ssg.page.PageSpec
+import com.jessebrault.ssg.text.Text
+import com.jessebrault.ssg.view.WvcPageView
+import jakarta.inject.Inject
+
+@PageSpec(name = 'Biography', path = '/biography')
+class BiographyPage extends WvcPageView {
+
+    private final TitleMaker titleMaker
+    private final Text biography
+
+    @Inject
+    BiographyPage(TitleMaker titleMaker, @InjectText('/Biography.md') Text biography) {
+        super(BiographyPage.getResource('BiographyPage.wvc'))
+        this.titleMaker = titleMaker
+        this.biography = biography
+    }
+
+    String renderBiography() {
+        biography.render()
+    }
+
+    String renderTitle() {
+        titleMaker.makeTitle(pageTitle)
+    }
+
+}
