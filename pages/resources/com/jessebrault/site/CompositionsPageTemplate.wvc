@@ -1,0 +1,6 @@
+---
+package com.jessebrault.site
+---
+<StandardPage title={title}>
+    <h1>Compositions</h1>
+</StandardPage>

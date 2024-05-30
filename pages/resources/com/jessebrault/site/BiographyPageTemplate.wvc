@@ -1,0 +1,8 @@
+---
+package com.jessebrault.site
+---
+<StandardPage title={title}>
+    <article>
+        <%= renderBiography() %>
+    </article>
+</StandardPage>

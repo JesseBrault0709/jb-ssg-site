@@ -1,8 +1,8 @@
+import com.jessebrault.site.util.TitleMaker
 import com.jessebrault.ssg.buildscript.BuildScriptBase
 import groovy.transform.BaseScript
-import com.jessebrault.site.util.TitleMaker
 
-import static groowt.util.di.BindingUtil.toSingleton
+import static groowt.util.di.BindingUtil.toSelf
 
 @BaseScript
 BuildScriptBase base
@@ -12,7 +12,7 @@ build {
     baseUrl 'https://jessebrault.com'
     objectFactoryBuilder.configure {
         configureRegistry {
-            bind(TitleMaker, toSingleton(new TitleMaker(siteName)))
+            bind(TitleMaker, toSelf())
         }
     }
 }

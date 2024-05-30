@@ -1,0 +1,9 @@
+---
+package com.jessebrault.site
+---
+<html lang="en">
+    <Head title={title} />
+    <body>
+        <% bodyChildren -> pageChildren.each { bodyChildren << it } %>
+    </body>
+</html>

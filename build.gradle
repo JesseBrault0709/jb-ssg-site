@@ -12,7 +12,5 @@ repositories {
 
 dependencies {
     implementation 'org.apache.groovy:groovy:4.0.21'
-    ssgImplementation sourceSets.main.runtimeClasspath // TODO: put this in plugin
-    pagesImplementation sourceSets.main.runtimeClasspath
 }
 

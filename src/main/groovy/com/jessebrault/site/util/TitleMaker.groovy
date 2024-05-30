@@ -1,17 +1,19 @@
 package com.jessebrault.site.util
 
-import groowt.util.fp.provider.Provider
+import jakarta.inject.Inject
+import jakarta.inject.Named
 
 class TitleMaker {
 
-    private final Provider<String> siteTitleProvider
+    private final String siteTitle
 
-    TitleMaker(Provider<String> siteTitleProvider) {
-        this.siteTitleProvider = siteTitleProvider
+    @Inject
+    TitleMaker(@Named('siteName') String siteTitle) {
+        this.siteTitle = siteTitle
     }
 
     String makeTitle(String pageTitle) {
-        this.siteTitleProvider.get() + " — " + pageTitle
+        this.siteTitle + " — " + pageTitle
     }
 
 }

@@ -15,7 +15,6 @@ class BiographyPage extends WvcPageView {
 
     @Inject
     BiographyPage(TitleMaker titleMaker, @InjectText('/Biography.md') Text biography) {
-        super(BiographyPage.getResource('BiographyPage.wvc'))
         this.titleMaker = titleMaker
         this.biography = biography
     }
@@ -24,7 +23,7 @@ class BiographyPage extends WvcPageView {
         biography.render()
     }
 
-    String renderTitle() {
+    String getTitle() {
         titleMaker.makeTitle(pageTitle)
     }
 
