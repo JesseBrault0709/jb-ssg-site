@@ -2,5 +2,8 @@
 package com.jessebrault.site
 ---
 <StandardPage title={title}>
-    <h1>Compositions</h1>
+    <article>
+        <h1>Compositions</h1>
+        <Each items={compositions} transform={<CompositionListing (it) />} />
+    </article>
 </StandardPage>

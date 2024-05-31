@@ -1,0 +1,9 @@
+<header>
+    <h1>$siteName</h1>
+    <h2>$siteTagLine</h2>
+    <nav>
+        <ul>
+            <Each items={menuItems} transform={<li><a href={it.path}>$it.name</a></li>} />
+        </ul>
+    </nav>
+</header>
