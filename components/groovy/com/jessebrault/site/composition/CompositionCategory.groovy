@@ -1,6 +1,5 @@
-package com.jessebrault.site
+package com.jessebrault.site.composition
 
-import com.jessebrault.site.composition.Composition
 import groowt.view.component.web.BaseWebViewComponent
 
 class CompositionCategory extends BaseWebViewComponent {

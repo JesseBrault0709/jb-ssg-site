@@ -1,5 +1,5 @@
 ---
-package com.jessebrault.site
+package com.jessebrault.site.composition
 ---
 <div class="composition-listing">
     <div class="info-row-1">

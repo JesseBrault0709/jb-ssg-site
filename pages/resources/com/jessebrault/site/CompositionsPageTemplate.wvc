@@ -1,5 +1,7 @@
 ---
 package com.jessebrault.site
+
+import com.jessebrault.site.composition.CompositionCategory
 ---
 <StandardPage title={title}>
     <section>
