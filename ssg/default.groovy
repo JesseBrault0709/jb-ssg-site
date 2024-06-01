@@ -1,3 +1,4 @@
+import com.jessebrault.site.composition.CompositionContainer
 import com.jessebrault.site.util.TitleMaker
 import com.jessebrault.ssg.buildscript.BuildScriptBase
 import groovy.transform.BaseScript
@@ -14,10 +15,12 @@ build {
     globals {
         siteTagLine = 'Conductor and Composer'
         menuItems = ['Biography', 'Compositions']
+        compositionCategories = ['Chamber']
     }
     objectFactoryBuilder.configure {
         configureRegistry {
             bind(TitleMaker, toSelf())
+            bind(CompositionContainer, toSelf())
         }
     }
 }

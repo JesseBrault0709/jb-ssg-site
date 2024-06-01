@@ -1,0 +1,7 @@
+---
+package com.jessebrault.site
+---
+<article>
+    <h3>$category</h3>
+    <Each items={compositions} transform={<CompositionListing (it) />} />
+</article>

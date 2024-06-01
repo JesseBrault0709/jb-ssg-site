@@ -2,8 +2,14 @@
 package com.jessebrault.site
 ---
 <StandardPage title={title}>
-    <article>
+    <section>
         <h1>Compositions</h1>
-        <Each items={compositions} transform={<CompositionListing (it) />} />
-    </article>
+        <Each
+            items={categories}
+            transform={<CompositionCategory
+                category={it}
+                compositions={compositions.getByCategory(it)}
+            />}
+        />
+    </section>
 </StandardPage>

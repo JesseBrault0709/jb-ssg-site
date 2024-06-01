@@ -2,15 +2,20 @@ package com.jessebrault.site.composition
 
 import com.jessebrault.ssg.text.Text
 import groovy.transform.EqualsAndHashCode
-import groovy.transform.NullCheck
 import groovy.transform.ToString
-import groovy.transform.TupleConstructor
+import org.jetbrains.annotations.Nullable
 
-@TupleConstructor(defaults = false)
-@NullCheck(includeGenerated = true)
+import java.time.LocalDate
+
 @EqualsAndHashCode
 @ToString
 class Composition {
-    final Text text
-    final String title
+    Text text
+    String title
+    @Nullable String subTitle
+    @Nullable String version
+    String instrumentation
+    @Nullable String shortInfo
+    LocalDate date
+    Set<String> categories
 }

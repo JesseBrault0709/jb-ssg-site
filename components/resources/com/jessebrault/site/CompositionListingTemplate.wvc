@@ -1,4 +1,19 @@
 ---
 package com.jessebrault.site
 ---
-<p>$composition.title</p>
+<div class="composition-listing">
+    <div class="info-row-1">
+        <h4 class="title">$composition.title</h4>
+        <WhenNotNull item={composition.subTitle} render={<h5 class="sub-title">$it</h5>} />
+        <WhenNotNull item={composition.version} render={<span class="version">$it</span>} />
+    </div>
+    <div class="info-row-2">
+        <span class="instrumentation">$composition.instrumentation</span>
+    </div>
+    <WhenNotNull item={composition.shortInfo} render={
+        <div class="info-row-3"><span class="short-info">$composition.shortInfo</span></div>
+    } />
+    <div class="date-column">
+        <span class="date">${renderDate()}</span>
+    </div>
+</div>
