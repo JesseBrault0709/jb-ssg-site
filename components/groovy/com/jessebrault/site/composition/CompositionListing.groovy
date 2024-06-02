@@ -1,6 +1,5 @@
 package com.jessebrault.site.composition
 
-
 import groowt.view.component.web.BaseWebViewComponent
 
 import java.time.format.DateTimeFormatter

@@ -1,5 +1,6 @@
 ---
 title: Spirit Travels
+slug: spirit-travels
 version: Chamber orchestra version
 instrumentation: For fl, ob, cl, hn, 2 perc, pno, and strings 2.2.2.2.1.
 shortInfo: <em>In memoriam</em> Jane H. Kim.

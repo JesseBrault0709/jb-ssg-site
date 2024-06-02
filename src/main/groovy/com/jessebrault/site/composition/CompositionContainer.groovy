@@ -16,6 +16,7 @@ class CompositionContainer {
             new Composition(
                     text: text,
                     title: text.frontMatter.title,
+                    slug: text.frontMatter.slug,
                     subTitle: text.frontMatter.subTitle,
                     version: text.frontMatter.version,
                     instrumentation: text.frontMatter.instrumentation,

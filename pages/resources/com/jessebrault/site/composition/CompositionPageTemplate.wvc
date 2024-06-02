@@ -1,0 +1,10 @@
+---
+package com.jessebrault.site.composition
+
+import com.jessebrault.site.StandardPage
+---
+<StandardPage title={title}>
+    <article>
+        <h1>$composition.title</h1>
+    </article>
+</StandardPage>

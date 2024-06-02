@@ -12,6 +12,7 @@ import java.time.LocalDate
 class Composition {
     Text text
     String title
+    String slug
     @Nullable String subTitle
     @Nullable String version
     String instrumentation
