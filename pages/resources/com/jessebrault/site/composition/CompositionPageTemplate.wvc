@@ -5,6 +5,15 @@ import com.jessebrault.site.StandardPage
 ---
 <StandardPage title={title}>
     <article>
-        <h1>$composition.title</h1>
+        <section class="composition-info">
+            <h1>$composition.title</h1>
+            <WhenNotNull item={composition.subTitle} render={<h2>$it</h2>} />
+            <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
+            <p class="year">$compositionYear</p>
+            <p class="instrumentation">$composition.instrumentation</p>
+        </section>
+        <section class="composition-text">
+            ${composition.text.render()}
+        </section>
     </article>
 </StandardPage>
