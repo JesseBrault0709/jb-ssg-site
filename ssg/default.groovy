@@ -15,7 +15,7 @@ build {
     globals {
         siteTagLine = 'Conductor and Composer'
         menuItems = ['Biography', 'Compositions']
-        compositionCategories = ['Chamber']
+        compositionCategories = ['Chamber', 'Solo']
     }
     objectFactoryBuilder.configure {
         configureRegistry {

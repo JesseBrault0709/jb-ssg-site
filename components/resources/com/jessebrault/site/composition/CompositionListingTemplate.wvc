@@ -3,7 +3,7 @@ package com.jessebrault.site.composition
 ---
 <div class="composition-listing">
     <div class="info-row-1">
-        <h4 class="title">$composition.title</h4>
+        <h4 class="title"><a href={compositionUrl}>$composition.title</a></h4>
         <WhenNotNull item={composition.subTitle} render={<h5 class="sub-title">$it</h5>} />
         <WhenNotNull item={composition.version} render={<span class="version">$it</span>} />
     </div>
@@ -14,6 +14,6 @@ package com.jessebrault.site.composition
         <div class="info-row-3"><span class="short-info">$composition.shortInfo</span></div>
     } />
     <div class="date-column">
-        <span class="date">${renderDate()}</span>
+        <span class="date">$compositionDate</span>
     </div>
 </div>

@@ -12,8 +12,12 @@ class CompositionListing extends BaseWebViewComponent {
         this.composition = composition
     }
 
-    String renderDate() {
+    String getCompositionDate() {
         composition.date.format(DateTimeFormatter.ofPattern('yyyy'))
+    }
+
+    String getCompositionUrl() {
+        '/compositions/' + composition.slug
     }
 
 }
