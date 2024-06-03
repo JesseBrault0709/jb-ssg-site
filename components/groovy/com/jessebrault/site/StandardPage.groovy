@@ -2,6 +2,9 @@ package com.jessebrault.site
 
 import groowt.view.component.web.BaseWebViewComponent
 
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 class StandardPage extends BaseWebViewComponent {
 
     final String title
@@ -12,6 +15,10 @@ class StandardPage extends BaseWebViewComponent {
 
     List getPageChildren() {
         this.children
+    }
+
+    String getCopyrightYear() {
+        LocalDate.now().format(DateTimeFormatter.ofPattern('yyyy'))
     }
 
 }

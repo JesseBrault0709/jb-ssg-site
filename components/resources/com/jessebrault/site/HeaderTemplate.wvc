@@ -1,9 +1,14 @@
+---
+package com.jessebrault.site
+---
 <header>
-    <h1>$siteName</h1>
-    <h2>$siteTagLine</h2>
+    <div class="titles">
+        <h1 class="eb-garamond-semibold">$siteName</h1>
+        <h2 class="eb-garamond-semibold">$siteTagLine</h2>
+    </div>
     <nav>
         <ul>
-            <Each items={menuItems} transform={<li><a href={it.path}>$it.name</a></li>} />
+            <Each items={menuItems} transform={<li class="eb-garamond-regular"><a href={it.path}>$it.name</a></li>} />
         </ul>
     </nav>
 </header>

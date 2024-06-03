@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
-gradle -q installServerDist \
-  && bin/ssg build -g \
-  && build/install/jb-ssg-site-server/bin/JbServer "$@"
+function jbServer() {
+    if [ "$1" == "--debug" ]; then
+      shift
+      build/install/jb-ssg-site-server/bin/JbServer \
+        -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:8192 "$@"
+    else
+      build/install/jb-ssg-site-server/bin/JbServer "$@"
+    fi
+}
+
+gradle -q installServerDist && jbServer

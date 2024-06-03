@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 
 import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Set;
 
 @CommandLine.Command(
         name = "jbServer",
@@ -30,8 +32,11 @@ public class JbServer implements Runnable {
     @CommandLine.Option(names = { "-p", "--port" }, defaultValue = "8080")
     private int port;
 
-    @CommandLine.Option(names = { "-b", "--base" }, defaultValue = "dist/default")
-    private Path base;
+    @CommandLine.Option(names = { "-d", "--dist" }, defaultValue = "default")
+    private String dist;
+
+    @CommandLine.Option(names = { "-s", "--static", "--static-dir" }, arity = "0..*", defaultValue = "static")
+    private Set<Path> staticDirs;
 
     @Override
     public void run() {
@@ -45,7 +50,12 @@ public class JbServer implements Runnable {
         server.addConnector(connector);
 
         final Handler.Sequence sequence = new Handler.Sequence();
-        sequence.addHandler(new JbHandler(this.base));
+
+        final Set<Path> bases = new HashSet<>();
+        bases.add(Path.of("dist", this.dist));
+        bases.addAll(this.staticDirs);
+
+        sequence.addHandler(new JbHandler(bases));
         sequence.addHandler(new DefaultHandler());
         server.setHandler(sequence);
 

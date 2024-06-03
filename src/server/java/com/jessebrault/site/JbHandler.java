@@ -8,25 +8,22 @@ import org.eclipse.jetty.util.Callback;
 import java.nio.ByteBuffer;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 public final class JbHandler extends Handler.Abstract {
 
-    private static final Pattern extensionPattern = Pattern.compile("\\.(?<extension>.+)$");
+    private static final Pattern extensionPattern = Pattern.compile(".*\\..+$");
 
-    private static String getExtension(String path) {
+    private static boolean hasExtension(String path) {
         final var m = extensionPattern.matcher(path);
-        if (m.matches()) {
-            return m.group("extension");
-        } else {
-            return null;
-        }
+        return m.matches();
     }
 
-    private final Path base;
+    private final Set<Path> bases;
 
-    public JbHandler(Path base) {
-        this.base = base;
+    public JbHandler(Set<Path> bases) {
+        this.bases = bases;
     }
 
     @Override
@@ -44,21 +41,21 @@ public final class JbHandler extends Handler.Abstract {
             relative = "index.html";
         }
 
-        final String extension = getExtension(relative);
-        if (extension == null) {
+        if (!hasExtension(relative)) {
             relative = relative + ".html";
         }
 
-        final Path resolved = base.resolve(relative);
-        if (!Files.exists(resolved)) {
-            return false;
-        } else {
-            try (final var inputStream = Files.newInputStream(resolved)) {
-                final ByteBuffer byteBuffer = ByteBuffer.wrap(inputStream.readAllBytes());
-                response.write(true, byteBuffer, callback);
+        for (final Path base : this.bases) {
+            final Path resolved = base.resolve(relative);
+            if (Files.exists(resolved)) {
+                try (final var inputStream = Files.newInputStream(resolved)) {
+                    final ByteBuffer byteBuffer = ByteBuffer.wrap(inputStream.readAllBytes());
+                    response.write(true, byteBuffer, callback);
+                }
+                return true;
             }
-            return true;
         }
+        return false;
     }
 
 }

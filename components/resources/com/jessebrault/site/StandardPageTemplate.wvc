@@ -1,10 +1,15 @@
 ---
 package com.jessebrault.site
 ---
-<html lang="en">
+<html lang="en" class="cormorant-garamond-regular">
     <Head title={title} />
     <body>
         <Header />
-        <% bodyChildren -> pageChildren.each { bodyChildren << it } %>
+        <main>
+            <% children -> pageChildren.each { children << it } %>
+        </main>
+        <footer>
+            <p>Copyright $copyrightYear Jesse R. Brault. All rights reserved.</p>
+        </footer>
     </body>
 </html>
