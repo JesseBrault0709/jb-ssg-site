@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+gradle -q installServerDist \
+  && bin/ssg build -g \
+  && build/install/jb-ssg-site-server/bin/JbServer "$@"
