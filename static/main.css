@@ -1,6 +1,8 @@
 :root {
     --black: #000000;
-    --dark-red: #401815;
+    --dark-blue: #00416b;
+    --medium-blue: #005e9b;
+    --light-blue: #0071bb;
     --light-gray: #dedede;
     --off-white: #fdfdfd;
 }
@@ -38,7 +40,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--off-white);
+    background-color: var(--black);
 }
 
 header,
@@ -46,15 +48,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-inline: 50px;
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: var(--black);
+    background: linear-gradient(var(--light-blue), var(--dark-blue));
     color: var(--off-white);
     filter: drop-shadow(var(--black) 0 2px 2px);
 }
@@ -83,6 +84,10 @@ nav a:hover {
     color: var(--off-white);
 }
 
+main {
+    background-color: var(--off-white);
+}
+
 article {
     padding: 15px 25px;
     max-width: 700px;
@@ -93,14 +98,14 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-block: 20px;
-    background-color: var(--black);
+    background: linear-gradient(var(--medium-blue), var(--dark-blue));
     color: var(--off-white);
     filter: drop-shadow(var(--black) 0 -1px 1px);
 }
 
 footer .social-icons {
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
 }
 
 footer svg {
@@ -133,6 +138,5 @@ footer svg:hover {
 }
 
 .headshot {
-    object-fit: cover;
     width: 100%;
 }
