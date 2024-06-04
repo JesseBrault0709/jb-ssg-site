@@ -1,6 +1,7 @@
 :root {
-    --black: #110d0c;
+    --black: #000000;
     --dark-red: #401815;
+    --light-gray: #dedede;
     --off-white: #fdfdfd;
 }
 
@@ -44,21 +45,18 @@ header,
 footer {
     display: flex;
     align-items: center;
-    padding: 15px 25px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 1;
-    justify-content: space-between;
-    background: linear-gradient(90deg, var(--dark-red), var(--black));
-    color: white;
-    filter: drop-shadow(var(--black) 0 3px 3px);
-}
-
-footer {
-    justify-content: center;
+    background-color: var(--black);
+    color: var(--off-white);
+    filter: drop-shadow(var(--black) 0 2px 2px);
 }
 
 header .titles {
@@ -77,36 +75,64 @@ nav ul {
 
 nav a,
 nav a:visited {
-    color: white;
+    color: var(--light-gray);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: hsl(from white h s calc(l * 0.8));
-}
-
-main {
-    padding: 0 25px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: var(--off-white);
 }
 
 article {
-    padding: 15px 0;
+    padding: 15px 25px;
     max-width: 700px;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+    background-color: var(--black);
+    color: var(--off-white);
+    filter: drop-shadow(var(--black) 0 -1px 1px);
+}
+
+footer .social-icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+footer svg {
+    height: 48px;
+    fill: var(--light-gray);
+}
+
+footer svg:hover {
+    fill: var(--off-white);
+}
+
+.biography-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.biography-container > article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding-inline: 50px;
 }
 
 .headshot-container {
-    width: 100vw;
-    background: linear-gradient(90deg, #0d1313, var(--black));
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
-    filter: drop-shadow(var(--black) 0 3px 3px);
 }
 
 .headshot {
-    max-width: 700px;
+    object-fit: cover;
+    width: 100%;
 }

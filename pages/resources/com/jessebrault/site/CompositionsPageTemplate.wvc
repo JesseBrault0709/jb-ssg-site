@@ -4,7 +4,7 @@ package com.jessebrault.site
 import com.jessebrault.site.composition.CompositionCategory
 ---
 <StandardPage title={title}>
-    <section>
+    <article>
         <h1>Compositions</h1>
         <Each
             items={categories}
@@ -13,5 +13,5 @@ import com.jessebrault.site.composition.CompositionCategory
                 compositions={compositions.getByCategory(it)}
             />}
         />
-    </section>
+    </article>
 </StandardPage>

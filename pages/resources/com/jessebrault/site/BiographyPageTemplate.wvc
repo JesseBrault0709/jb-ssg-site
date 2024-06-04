@@ -2,10 +2,12 @@
 package com.jessebrault.site
 ---
 <StandardPage title={title}>
-    <div class="headshot-container">
-        <img src="/headshot.jpg" class="headshot" />
+    <div class="biography-container">
+        <div class="headshot-container">
+            <img src="/headshot.jpg" class="headshot" />
+        </div>
+        <article>
+            <%= renderBiography() %>
+        </article>
     </div>
-    <article>
-        <%= renderBiography() %>
-    </article>
 </StandardPage>
