@@ -1,4 +1,4 @@
-package com.jessebrault.site
+package com.jessebrault.site.biography
 
 import com.jessebrault.site.util.TitleMaker
 import com.jessebrault.ssg.di.InjectText

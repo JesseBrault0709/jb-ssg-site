@@ -4,12 +4,15 @@ package com.jessebrault.site
 import com.jessebrault.site.icon.SpotifyIcon
 import com.jessebrault.site.icon.YoutubeIcon
 ---
-<html lang="en" class="cormorant-garamond-regular">
+<html lang="en">
     <Head title={title} />
     <body>
-        <Header />
+        <div class="header-banner-container">
+            <Header />
+            <% children -> children << banner() %>
+        </div>
         <main>
-            <% children -> pageChildren.each { children << it } %>
+            <% children -> mainChildren.each { children << it } %>
         </main>
         <footer>
             <div class="social-icons">

@@ -1,0 +1,10 @@
+<div class="banner">
+    <div class="headshot-container">
+        <img src="/headshot.jpg" class="headshot" />
+    </div>
+    <div class="banner-blurb-container">
+        <p>With a unique set of talents, skills, and experiences,</p>
+        <p id="jesse-brault-name">Jesse Brault</p>
+        <p>is an American conductor, composer, and developer.</p>
+    </div>
+</div>

@@ -1,69 +1,50 @@
 :root {
     --black: #000000;
+    --charcoal: #38383b;
     --dark-blue: #00416b;
     --medium-blue: #005e9b;
     --light-blue: #0071bb;
     --light-gray: #dedede;
+    --petrol: #005f6a;
     --off-white: #fdfdfd;
 }
 
-.cormorant-garamond-regular {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cormorant-garamond-semibold {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.eb-garamond-regular {
-    font-family: 'EB Garamond', serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.eb-garamond-semibold {
-    font-family: 'EB Garamond', serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
 html {
-    font-size: 14pt;
+    font-size: 18px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--black);
+    background-color: var(--charcoal);
 }
 
-header,
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 50px;
+.header-banner-container {
+    background-color: var(--charcoal);
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: 0.2em;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background: linear-gradient(var(--light-blue), var(--dark-blue));
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 15px 50px;
     color: var(--off-white);
-    filter: drop-shadow(var(--black) 0 2px 2px);
 }
 
 header .titles {
     display: flex;
     align-items: baseline;
     column-gap: 15px;
+}
+
+header .titles * {
+    margin: 0;
+}
+
+header .titles h2 {
+    font-size: 18px;
 }
 
 nav ul {
@@ -76,6 +57,7 @@ nav ul {
 
 nav a,
 nav a:visited {
+    letter-spacing: 0.1em;
     color: var(--light-gray);
     text-decoration: none;
 }
@@ -84,11 +66,26 @@ nav a:hover {
     color: var(--off-white);
 }
 
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner > * {
+    width: 100%;
+    padding: 15px 50px;
+}
+
 main {
     background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 article {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.05em;
     padding: 15px 25px;
     max-width: 700px;
     text-align: justify;
@@ -97,10 +94,10 @@ article {
 footer {
     display: flex;
     justify-content: space-between;
-    padding-block: 20px;
-    background: linear-gradient(var(--medium-blue), var(--dark-blue));
+    padding: 20px 50px;
+    background-color: var(--charcoal);
     color: var(--off-white);
-    filter: drop-shadow(var(--black) 0 -1px 1px);
+    font-family: 'Cormorant Garamond', serif;
 }
 
 footer .social-icons {
@@ -117,21 +114,7 @@ footer svg:hover {
     fill: var(--off-white);
 }
 
-.biography-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.biography-container > article {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    padding-inline: 50px;
-}
-
 .headshot-container {
-    grid-column: 2 / 3;
-    grid-row: 1;
-    background-color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,4 +122,17 @@ footer svg:hover {
 
 .headshot {
     width: 100%;
+}
+
+.banner-blurb-container {
+    color: var(--off-white);
+    text-align: center;
+}
+
+.banner-blurb-container p {
+    font-size: 24px;
+}
+
+.banner-blurb-container p#jesse-brault-name {
+    font-size: 48px;
 }
