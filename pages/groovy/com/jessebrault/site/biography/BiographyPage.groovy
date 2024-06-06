@@ -7,7 +7,7 @@ import com.jessebrault.ssg.text.Text
 import com.jessebrault.ssg.view.WvcPageView
 import jakarta.inject.Inject
 
-@PageSpec(name = 'Biography', path = '/biography')
+@PageSpec(name = 'Biography', path = '/')
 class BiographyPage extends WvcPageView {
 
     private final TitleMaker titleMaker
