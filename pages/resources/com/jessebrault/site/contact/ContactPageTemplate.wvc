@@ -1,0 +1,8 @@
+---
+package com.jessebrault.site.contact
+
+import com.jessebrault.site.StandardPage
+---
+<StandardPage title={title} banner={<ContactBanner />}>
+    <p>Hello</p>
+</StandardPage>

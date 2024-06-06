@@ -16,12 +16,8 @@ import com.jessebrault.site.icon.YoutubeIcon
         </main>
         <footer>
             <div class="social-icons">
-                <a href="https://open.spotify.com/artist/4ea1gZnLlQTrXKIMsnlr45?si=DfR-KCDyTiycbjmYwu566w">
-                    <SpotifyIcon />
-                </a>
-                <a href="https://www.youtube.com/@JesseBrault0709">
-                    <YoutubeIcon />
-                </a>
+                <a href={spotifyUrl}><SpotifyIcon /></a>
+                <a href={youtubeUrl}><YoutubeIcon /></a>
             </div>
             <p>Copyright $copyrightYear Jesse R. Brault. All rights reserved.</p>
         </footer>

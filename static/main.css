@@ -7,6 +7,8 @@
     --light-gray: #dedede;
     --petrol: #476c77;
     --off-white: #fdfdfd;
+    --gothic: 'Didact Gothic', sans-serif;
+    --garamond: 'Cormorant Garamond', serif;
 }
 
 html {
@@ -21,7 +23,7 @@ body {
 
 .header-banner-container {
     background-color: var(--petrol);
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: var(--gothic);
     letter-spacing: 0.2em;
 }
 
@@ -69,6 +71,7 @@ nav a:hover {
 .banner {
     display: flex;
     align-items: center;
+    color: var(--off-white);
 }
 
 .banner > * {
@@ -84,7 +87,7 @@ main {
 }
 
 article {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--garamond);
     letter-spacing: 0.05em;
     padding: 50px 25px;
     max-width: 700px;
@@ -97,7 +100,7 @@ footer {
     padding: 20px 50px;
     background-color: var(--petrol);
     color: var(--off-white);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--garamond);
 }
 
 footer .social-icons {
@@ -125,7 +128,6 @@ footer svg:hover {
 }
 
 .biography-banner .blurb-container {
-    color: var(--off-white);
     display: flex;
     flex-direction: column;
     row-gap: 36px;
@@ -147,6 +149,58 @@ footer svg:hover {
     border: 1px solid var(--light-gray);
     width: 150px;
     height: 40px;
-    font-family: 'Didact Gothic';
+    font-family: var(--gothic);
     font-size: 18px;
+}
+
+.contact-banner article.social-media-links {
+    font-family: var(--gothic);
+}
+
+.contact-banner article.social-media-links h1 {
+    font-size: 36px;
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.contact-banner div.social-media-links {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-banner a {
+    display: contents;
+    color: var(--light-gray);
+    fill: var(--light-gray);
+    text-decoration: none;
+}
+
+.contact-banner a:hover {
+    & span {
+        color: var(--off-white);
+    }
+    & svg {
+        fill: var(--off-white);
+    }
+}
+
+.contact-banner a:visited {
+    & span {
+        color: var(--off-white);
+    }
+    & svg {
+        fill: var(--off-white);
+    }
+}
+
+.contact-banner svg {
+    height: 72px;
+    justify-self: center;
+}
+
+.contact-banner a span {
+    font-size: 27px;
+    justify-self: stretch;
 }

@@ -1,0 +1,19 @@
+---
+package com.jessebrault.site.contact
+
+import com.jessebrault.site.icon.*
+---
+<div class="banner contact-banner">
+    <div class="headshot-container">
+        <img src="/portrait2.jpg" class="headshot" />
+    </div>
+    <article class="social-media-links">
+        <h1>Social Media</h1>
+        <div class="social-media-links">
+            <a href={spotifyUrl}><SpotifyIcon /><span>Spotify Profile</span></a>
+            <a href={youtubeUrl}><YoutubeIcon /><span>Youtube Channel</span></a>
+            <a href={linkedInUrl}><LinkedInIcon /><span>LinkedIn Profile</span></a>
+            <a href={githubUrl}><GithubIcon /><span>Github Profile</span></a>
+        </div>
+    </article>
+</div>

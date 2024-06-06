@@ -14,8 +14,12 @@ build {
     basePackage 'com.jessebrault.site'
     globals {
         siteTagLine = 'Conductor, Composer, Developer'
-        menuItems = ['Biography', 'Compositions']
+        menuItems = ['Biography', 'Compositions', 'Contact']
         compositionCategories = ['Chamber', 'Solo']
+        spotifyUrl = 'https://open.spotify.com/artist/4ea1gZnLlQTrXKIMsnlr45?si=DfR-KCDyTiycbjmYwu566w'
+        youtubeUrl = 'https://www.youtube.com/@JesseBrault0709'
+        linkedInUrl = 'https://www.linkedin.com/in/jessebrault0709/'
+        githubUrl = 'https://github.com/JesseBrault0709'
     }
     objectFactoryBuilder.configure {
         configureRegistry {
