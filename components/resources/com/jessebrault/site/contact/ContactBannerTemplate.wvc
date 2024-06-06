@@ -7,7 +7,7 @@ import com.jessebrault.site.icon.*
     <div class="headshot-container">
         <img src="/portrait2.jpg" class="headshot" />
     </div>
-    <article class="social-media-links">
+    <article class="banner-text social-media-links">
         <h1>Social Media</h1>
         <div class="social-media-links">
             <a href={spotifyUrl}><SpotifyIcon /><span>Spotify Profile</span></a>

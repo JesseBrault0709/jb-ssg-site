@@ -2,7 +2,7 @@
     <div class="headshot-container">
         <img src="/portrait.jpg" class="headshot" />
     </div>
-    <div class="blurb-container">
+    <div class="banner-text blurb-container">
         <p id="jesse-brault-name">Jesse Brault</p>
         <p>American conductor, composer, and developer.</p>
         <button type="button">Read More</button>

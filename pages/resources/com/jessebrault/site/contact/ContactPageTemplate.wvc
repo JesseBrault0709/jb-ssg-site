@@ -11,25 +11,30 @@ import com.jessebrault.site.StandardPage
             <div class="control">
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text" />
+                <p class="message">&nbsp;</p>
             </div>
 
             <div class="control">
                 <label for="institution">Institution</label>
                 <input id="institution" name="institution" type="text" />
+                <p class="message">&nbsp;</p>
             </div>
 
             <div class="control">
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" />
+                <p class="message">&nbsp;</p>
             </div>
 
             <div class="control">
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
+                <p class="message">&nbsp;</p>
             </div>
 
             <div class="control">
                 <input type="submit" />
+                <p class="message">&nbsp;</p>
             </div>
         </form>
     </article>
