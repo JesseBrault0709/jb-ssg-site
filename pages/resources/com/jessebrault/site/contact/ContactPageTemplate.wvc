@@ -3,7 +3,7 @@ package com.jessebrault.site.contact
 
 import com.jessebrault.site.StandardPage
 ---
-<StandardPage title={title} banner={<ContactBanner />}>
+<StandardPage title={title} banner={<ContactBanner />} pageScripts={['/contact.js']}>
     <article class="contact">
         <h1>Contact</h1>
         <p>Please use the following form to contact Jesse Brault directly.</p>

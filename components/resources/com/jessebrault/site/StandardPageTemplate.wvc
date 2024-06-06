@@ -21,5 +21,6 @@ import com.jessebrault.site.icon.YoutubeIcon
             </div>
             <p>Copyright $copyrightYear Jesse R. Brault. All rights reserved.</p>
         </footer>
+        <Each items={pageScripts} transform={<script src={it}></script>} />
     </body>
 </html>
