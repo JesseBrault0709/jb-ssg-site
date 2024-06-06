@@ -204,3 +204,51 @@ footer svg:hover {
     font-size: 27px;
     justify-self: stretch;
 }
+
+article.contact {
+    min-width: 500px;
+    max-width: 50%;
+    padding: 50px;
+}
+
+form.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.contact .control {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.contact .control * {
+    width: 100%;
+}
+
+.contact .control input,
+.contact .control textarea {
+    min-height: 40px;
+    font-family: var(--garamond);
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid var(--charcoal);
+    border-radius: 3px;
+}
+
+.contact .control textarea {
+    min-height: 160px;
+}
+
+.contact .control input[type='submit'] {
+    background-color: var(--petrol);
+    color: var(--off-white);
+    height: 60px;
+}
+
+.contact .control input[type='submit']:hover {
+    background-color: rgba(from var(--petrol) r g b / 0.5);
+    cursor: pointer;
+}

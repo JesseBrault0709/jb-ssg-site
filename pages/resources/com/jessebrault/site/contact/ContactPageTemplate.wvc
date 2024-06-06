@@ -4,5 +4,33 @@ package com.jessebrault.site.contact
 import com.jessebrault.site.StandardPage
 ---
 <StandardPage title={title} banner={<ContactBanner />}>
-    <p>Hello</p>
+    <article class="contact">
+        <h1>Contact</h1>
+        <p>Please use the following form to contact Jesse Brault directly.</p>
+        <form class="contact">
+            <div class="control">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" />
+            </div>
+
+            <div class="control">
+                <label for="institution">Institution</label>
+                <input id="institution" name="institution" type="text" />
+            </div>
+
+            <div class="control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" />
+            </div>
+
+            <div class="control">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div class="control">
+                <input type="submit" />
+            </div>
+        </form>
+    </article>
 </StandardPage>
