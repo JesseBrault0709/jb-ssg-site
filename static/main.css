@@ -73,7 +73,7 @@ nav a:hover {
 
 .banner > * {
     width: 100%;
-    padding: 15px 50px;
+    padding: 15px 50px 30px;
 }
 
 main {
@@ -86,7 +86,7 @@ main {
 article {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 0.05em;
-    padding: 15px 25px;
+    padding: 50px 25px;
     max-width: 700px;
     text-align: justify;
 }
@@ -124,15 +124,29 @@ footer svg:hover {
     width: 100%;
 }
 
-.banner-blurb-container {
+.biography-banner .blurb-container {
     color: var(--off-white);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
 }
 
-.banner-blurb-container p {
-    font-size: 24px;
+.biography-banner .blurb-container > * {
+    margin: 0;
 }
 
-.banner-blurb-container p#jesse-brault-name {
-    font-size: 48px;
+.biography-banner .blurb-container p {
+    font-size: 36px;
+}
+
+.biography-banner .blurb-container p#jesse-brault-name {
+    font-size: 54px;
+}
+
+.biography-banner .blurb-container button {
+    border: 1px solid var(--light-gray);
+    width: 150px;
+    height: 40px;
+    font-family: 'Didact Gothic';
+    font-size: 18px;
 }

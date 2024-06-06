@@ -9,11 +9,11 @@ import static groowt.util.di.BindingUtil.toSelf
 BuildScriptBase base
 
 build {
-    siteName 'Jesse R. Brault'
+    siteName 'Jesse Brault'
     baseUrl 'https://jessebrault.com'
     basePackage 'com.jessebrault.site'
     globals {
-        siteTagLine = 'Conductor and Composer'
+        siteTagLine = 'Conductor, Composer, Developer'
         menuItems = ['Biography', 'Compositions']
         compositionCategories = ['Chamber', 'Solo']
     }
