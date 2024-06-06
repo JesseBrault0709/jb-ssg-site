@@ -4,14 +4,16 @@ package com.jessebrault.site
 import com.jessebrault.site.composition.CompositionCategory
 ---
 <StandardPage title={title}>
-    <article>
+    <article class="compositions">
         <h1>Compositions</h1>
-        <Each
-            items={categories}
-            transform={<CompositionCategory
-                category={it}
-                compositions={compositions.getByCategory(it)}
-            />}
-        />
+        <div class="composition-categories">
+            <Each
+                items={categories}
+                transform={<CompositionCategory
+                    category={it}
+                    compositions={compositions.getByCategory(it)}
+                />}
+            />
+        </div>
     </article>
 </StandardPage>

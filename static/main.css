@@ -99,6 +99,18 @@ article {
     text-align: justify;
 }
 
+article h1 {
+    font-size: 2em;
+}
+
+article h2 {
+    font-size: 1.75em;
+}
+
+article h3 {
+    font-size: 1.5em;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -169,6 +181,74 @@ button {
 .biography-banner .blurb-container button:hover {
     background-color: var(--off-white);
     cursor: pointer;
+}
+
+.compositions {
+    min-width: min(100%, 700px);
+}
+
+.composition-categories {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.composition-listings > * {
+    border-top: 1px solid var(--light-gray);
+}
+
+.composition-listings:last-child {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.composition-listing {
+    padding-block: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+        'r1 date'
+        'r2 .'
+        'r3 .';
+    row-gap: 10px;
+}
+
+.composition-listing .info-row-1 {
+    grid-area: r1;
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+.composition-listing .info-row-1 .title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.composition-listing .info-row-1 .title a {
+    color: var(--charcoal);
+
+    &:hover {
+        color: hsl(from var(--charcoal) h s l / 0.75);
+    }
+}
+
+.composition-listing .info-row-1 .sub-title {
+    margin: 0;
+}
+
+.composition-listing .info-row-2 {
+    grid-area: r2;
+}
+
+.composition-listing .info-row-3 {
+    grid-area: r3;
+}
+
+.composition-listing .date-column {
+    grid-area: date;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.25em;
 }
 
 .contact-banner article.social-media-links {

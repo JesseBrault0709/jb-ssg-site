@@ -3,5 +3,7 @@ package com.jessebrault.site.composition
 ---
 <section>
     <h3>$category</h3>
-    <Each items={compositions} transform={<CompositionListing (it) />} />
+    <div class="composition-listings">
+        <Each items={compositions} transform={<CompositionListing (it) />} />
+    </div>
 </section>
