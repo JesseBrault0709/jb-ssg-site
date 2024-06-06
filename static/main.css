@@ -5,7 +5,7 @@
     --medium-blue: #005e9b;
     --light-blue: #0071bb;
     --light-gray: #dedede;
-    --petrol: #005f6a;
+    --petrol: #476c77;
     --off-white: #fdfdfd;
 }
 
@@ -16,11 +16,11 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--charcoal);
+    background-color: var(--petrol);
 }
 
 .header-banner-container {
-    background-color: var(--charcoal);
+    background-color: var(--petrol);
     font-family: 'Didact Gothic', sans-serif;
     letter-spacing: 0.2em;
 }
@@ -95,7 +95,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: var(--charcoal);
+    background-color: var(--petrol);
     color: var(--off-white);
     font-family: 'Cormorant Garamond', serif;
 }
