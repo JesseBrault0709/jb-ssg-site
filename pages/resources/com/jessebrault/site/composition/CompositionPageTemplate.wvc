@@ -11,6 +11,13 @@ import com.jessebrault.site.StandardPage
             <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
             <p class="year">$compositionYear</p>
             <p class="instrumentation">$composition.instrumentation</p>
+            <WhenNotEmpty items={alternateVersions}>
+                <p>Alternate versions:
+                    <ul>
+                        <Each items={alternateVersions} transform={<li><a href={it.path}>${it.versionName}</a></li>} />
+                    </ul>
+                </p>
+            </WhenNotEmpty>
         </section>
         <section class="composition-text">
             ${composition.text.render()}

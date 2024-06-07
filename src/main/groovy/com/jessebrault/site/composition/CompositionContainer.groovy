@@ -35,4 +35,8 @@ class CompositionContainer {
         this.compositions.findAll { it.categories.contains(category) }
     }
 
+    Set<Composition> getAlternateVersions(Composition composition) {
+        this.compositions.findAll { it.title == composition.title && it.version != composition.version }
+    }
+
 }
