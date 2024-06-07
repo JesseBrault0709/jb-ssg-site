@@ -98,11 +98,11 @@ main {
     padding: 50px 25px;
     max-width: 70ch;
     min-width: min(100%, 70ch);
+    font-family: var(--garamond);
+    letter-spacing: 0.05em;
 }
 
 article {
-    font-family: var(--garamond);
-    letter-spacing: 0.05em;
     text-align: justify;
 }
 
@@ -258,6 +258,8 @@ button {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    border-bottom: 1px solid var(--light-gray);
+    padding-block-end: 1em;
 }
 
 .composition-info .composition-titles-year-container {
