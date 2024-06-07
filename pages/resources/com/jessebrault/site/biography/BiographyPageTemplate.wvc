@@ -4,7 +4,9 @@ package com.jessebrault.site.biography
 import com.jessebrault.site.StandardPage
 ---
 <StandardPage title={title} banner={<BiographyBanner />}>
-    <article>
-        <%= renderBiography() %>
-    </article>
+    <div class="article-container">
+        <article>
+            <%= renderBiography() %>
+        </article>
+    </div>
 </StandardPage>

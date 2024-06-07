@@ -4,23 +4,31 @@ package com.jessebrault.site.composition
 import com.jessebrault.site.StandardPage
 ---
 <StandardPage title={title}>
-    <article>
-        <section class="composition-info">
-            <h1>$composition.title</h1>
-            <WhenNotNull item={composition.subTitle} render={<h2>$it</h2>} />
-            <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
-            <p class="year">$compositionYear</p>
-            <p class="instrumentation">$composition.instrumentation</p>
-            <WhenNotEmpty items={alternateVersions}>
-                <p>Alternate versions:
-                    <ul>
-                        <Each items={alternateVersions} transform={<li><a href={it.path}>${it.versionName}</a></li>} />
-                    </ul>
-                </p>
-            </WhenNotEmpty>
-        </section>
-        <section class="composition-text">
-            ${composition.text.render()}
-        </section>
-    </article>
+    <div class="article-container">
+        <a id="back-to-compositions" href="/compositions">Back to compositions</a>
+        <article>
+            <section class="composition-info">
+                <div class="composition-titles-year-container">
+                    <div class="composition-titles">
+                        <h1 class="title">$composition.title</h1>
+                        <WhenNotNull item={composition.subTitle} render={<h2 class="sub-title">$it</h2>} />
+                    </div>
+                    <p class="year">$compositionYear</p>
+                </div>
+                <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
+                <p class="instrumentation">$composition.instrumentation</p>
+                <WhenNotEmpty items={alternateVersions}>
+                    <div class="alternate-versions">
+                        <p>Alternate versions:</p>
+                        <ul>
+                            <Each items={alternateVersions} transform={<li><a href={it.path}>${it.versionName}</a></li>} />
+                        </ul>
+                    </div>
+                </WhenNotEmpty>
+            </section>
+            <section class="composition-text">
+                ${composition.text.render()}
+            </section>
+        </article>
+    </div>
 </StandardPage>
