@@ -147,6 +147,14 @@ button {
     border-radius: 3px;
 }
 
+a {
+    color: var(--petrol);
+}
+
+a:hover {
+    color: rgba(from var(--petrol) r g b / 0.5);
+}
+
 .headshot-container {
     display: flex;
     flex-direction: column;
@@ -257,9 +265,9 @@ button {
 .composition-info {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
     border-bottom: 1px solid var(--light-gray);
-    padding-block-end: 1em;
+    padding-block-end: 2em;
 }
 
 .composition-info .composition-titles-year-container {
@@ -280,11 +288,15 @@ button {
 .composition-info .alternate-versions {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 10px;
 }
 
 .composition-info .alternate-versions ul {
     margin: 0;
+}
+
+.composition-text p:first-child {
+    margin-block-start: 2em;
 }
 
 .contact-banner article.social-media-links {
