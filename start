@@ -10,4 +10,4 @@ function jbServer() {
     fi
 }
 
-gradle -q installServerDist && jbServer
+./gradlew -q installServerDist && jbServer
