@@ -416,8 +416,17 @@ form.contact {
     cursor: pointer;
 }
 
+.contact .control input.invalid,
+.contact .control textarea.invalid {
+    border: 1px solid red;
+}
+
 .contact .control .message {
     margin: 0;
+}
+
+.contact .control .error {
+    color: red;
 }
 
 @media screen and (max-width: 767px) {
