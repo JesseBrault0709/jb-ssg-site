@@ -6,4 +6,10 @@ date: 2019-05-01
 categories: 
   - Solo
 ---
-Information about _Four Pieces for Piano_.
+This work was written for my dear friend Julia Hamos. 
+It is a set of four small pieces, each varying wildly in character:
+
+1. A "celebration", full of radiance, and in a flowing tempo.
+2. A bit mysterious, and in a slow, very free tempo. Echoes of Debussy (who himself echoed Wagner).
+3. A moderate toccata, alternating between quietly agitated (though somewhat playful) and furioso characters.
+4. Slow. Feelings of resignation and loss.
