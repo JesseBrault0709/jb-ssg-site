@@ -9,10 +9,10 @@ import com.jessebrault.site.icon.BarsIcon
         <h2>$siteTagLine</h2>
     </div>
     <nav>
-        <button class="bars-wrapper">
+        <button id="nav-bars" class="bars-wrapper">
             <BarsIcon />
         </button>
-        <ul>
+        <ul id="nav-items">
             <Each items={menuItems} transform={<li><a href={it.path}>$it.name</a></li>} />
         </ul>
     </nav>
