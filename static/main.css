@@ -325,7 +325,9 @@ article.compositions {
 }
 
 .contact-banner article.social-media-links h1 {
-    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
     color: var(--light-gray);
 }
 
@@ -362,12 +364,12 @@ article.compositions {
 }
 
 .contact-banner svg {
-    height: 72px;
+    height: 48px;
     justify-self: center;
 }
 
 .contact-banner a span {
-    font-size: 27px;
+    font-size: 1em;
     justify-self: stretch;
 }
 
@@ -587,5 +589,17 @@ form.contact {
         font-size: 2em;
         font-size: 18px;
         letter-spacing: 0.15em;
+    }
+
+    .contact-banner svg {
+        height: 72px;
+    }
+
+    .contact-banner article.social-media-links h1 {
+        font-size: 2em;
+    }
+
+    .contact-banner a span {
+        font-size: 1.75em;
     }
 }
