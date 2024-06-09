@@ -1,5 +1,7 @@
 ---
 package com.jessebrault.site
+
+import com.jessebrault.site.icon.BarsIcon
 ---
 <header>
     <div class="titles">
@@ -7,6 +9,9 @@ package com.jessebrault.site
         <h2>$siteTagLine</h2>
     </div>
     <nav>
+        <button class="bars-wrapper">
+            <BarsIcon />
+        </button>
         <ul>
             <Each items={menuItems} transform={<li><a href={it.path}>$it.name</a></li>} />
         </ul>

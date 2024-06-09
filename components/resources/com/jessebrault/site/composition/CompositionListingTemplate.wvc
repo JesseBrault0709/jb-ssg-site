@@ -5,7 +5,10 @@ package com.jessebrault.site.composition
     <div class="info-row-1">
         <h4 class="title"><a href={compositionUrl}>$composition.title</a></h4>
         <WhenNotNull item={composition.subTitle} render={<h5 class="sub-title">$it</h5>} />
-        <WhenNotNull item={composition.version} render={<span class="version"> – $it</span>} />
+        <WhenNotNull item={composition.version} render={<span class="version">$it</span>} />
+    </div>
+    <div class="date-column">
+        <span class="date">$compositionDate</span>
     </div>
     <div class="info-row-2">
         <span class="instrumentation">$composition.instrumentation</span>
@@ -13,7 +16,4 @@ package com.jessebrault.site.composition
     <WhenNotNull item={composition.shortInfo} render={
         <div class="info-row-3"><span class="short-info">$composition.shortInfo</span></div>
     } />
-    <div class="date-column">
-        <span class="date">$compositionDate</span>
-    </div>
 </div>
