@@ -6,10 +6,11 @@ import com.jessebrault.site.util.OpenGraph
 ---
 <StandardPage
     title={title}
+    description={description}
     openGraph={<OpenGraph
         title="Biography"
         type="website"
-        description={"Conductor and composer Jesse Brault studied orchestral conducting at the Juilliard School with Maestros Alan Gilbert and James Ross."}
+        description={description}
         path="/"
     />}
     banner={<BiographyBanner />}

@@ -13,6 +13,7 @@ import com.jessebrault.site.util.OpenGraph
         path={selfPage.path}
     />}
     title={title}
+    description={composition.description}
 >
     <div class="article-container">
         <a id="back-to-compositions" href="/compositions">Back to compositions</a>

@@ -6,6 +6,7 @@ import com.jessebrault.site.util.OpenGraph
 ---
 <StandardPage
     title={title}
+    description="Contact information for Jesse Brault."
     openGraph={<OpenGraph
         title="Contact"
         type="website"

@@ -14,6 +14,7 @@ class StandardPage extends BaseWebViewComponent {
     final String spotifyUrl
     final String youtubeUrl
     final String title
+    final @Nullable String description
     final @Nullable Closure<WebViewComponent> openGraph
     final Closure<WebViewComponent> banner
     final List<String> pageScripts
@@ -23,6 +24,7 @@ class StandardPage extends BaseWebViewComponent {
         this.spotifyUrl = spotifyUrl
         this.youtubeUrl = youtubeUrl
         this.title = attr.title
+        this.description = attr.description
         this.openGraph = attr.openGraph
         this.banner = attr.banner ?: { '' }
         this.pageScripts = attr.pageScripts ?: []

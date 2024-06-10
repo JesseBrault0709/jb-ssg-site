@@ -7,6 +7,7 @@ package com.jessebrault.site
     <% children -> children << openGraph %>
 
     <title>$title</title>
+    <WhenNotNull item={description} render={<meta name="description" content={it} />} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

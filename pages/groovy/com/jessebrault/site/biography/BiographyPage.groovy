@@ -10,6 +10,8 @@ import jakarta.inject.Inject
 @PageSpec(name = 'Biography', path = '/')
 class BiographyPage extends WvcPageView {
 
+    static final String description = 'Conductor and composer Jesse Brault studied orchestral conducting at the Juilliard School with Maestros Alan Gilbert and James Ross.'
+
     final Text biography
     private final TitleMaker titleMaker
 
