@@ -3,6 +3,9 @@ title: Sonata Shambhala
 slug: sonata-shambhala
 instrumentation: For solo piano.
 premiere: November 11, 2018, at Marlboro College, Brattleboro, Vermont.
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/sonata-shambhala.pdf
+externalLinks:
+  'Benjamin Hochman Discusses Sonata Shambhala': https://www.youtube.com/watch?v=leyqMdGyr8Q
 date: 2018-09-01
 categories:
   - Solo

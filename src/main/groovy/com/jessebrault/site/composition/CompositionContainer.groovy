@@ -21,7 +21,7 @@ class CompositionContainer {
                     version: text.frontMatter.version,
                     instrumentation: text.frontMatter.instrumentation,
                     premiere: text.frontMatter.premiere,
-                    pdfUrl: text.frontMatter.pdfUrl,
+                    score: text.frontMatter.score,
                     recordings: text.frontMatter.recordings ?: [:],
                     externalLinks: text.frontMatter.externalLinks ?: [:],
                     shortInfo: text.frontMatter.shortInfo,

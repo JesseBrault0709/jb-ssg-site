@@ -3,6 +3,7 @@ title: Conversations
 slug: conversations
 instrumentation: For two violins.
 premiere: April 3, 2019, at Church of St. Paul the Apostle, New York, New York.
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/conversations.pdf
 date: 2017-06-01
 categories:
   - Chamber

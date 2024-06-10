@@ -3,6 +3,7 @@ title: Near, Under, Far
 slug: near-under-far
 instrumentation: For solo cello.
 premiere: March 2022. (Online)
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/near-under-far.pdf
 recordings:
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/near-under-far.mp3
 externalLinks:

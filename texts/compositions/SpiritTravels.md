@@ -4,6 +4,7 @@ slug: spirit-travels
 version: Chamber orchestra version
 instrumentation: For fl, ob, cl, hn, 2 perc, pno, and strings 2.2.2.2.1.
 premiere: December 3, 2023, at The Juilliard School, New York, New York.
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/spirit-travels.pdf
 recordings:
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/spirit-travels.mp3
 shortInfo: <em>In memoriam</em> Jane H. Kim.

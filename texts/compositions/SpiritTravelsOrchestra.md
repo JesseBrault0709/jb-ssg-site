@@ -3,6 +3,9 @@ title: Spirit Travels
 slug: spirit-travels-orchestra
 version: Orchestra version
 instrumentation: For 3.3.3.3 + std doublings, 4.2.3.1, timp, 3 perc, pno, and strings. 
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/spirit-travels-orchestra.pdf
+recordings:
+  'Midi Mockup': https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/spirit-travels-orchestra-midi.mp3
 shortInfo: <em>In memoriam</em> Jane H. Kim.
 date: 2024-02-20
 categories:

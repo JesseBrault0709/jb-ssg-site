@@ -17,7 +17,7 @@ class Composition {
     @Nullable String version
     String instrumentation
     @Nullable String premiere
-    @Nullable String pdfUrl
+    @Nullable String score
     Map<String, String> recordings
     Map<String, String> externalLinks
     @Nullable String shortInfo

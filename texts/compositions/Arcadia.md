@@ -3,6 +3,7 @@ title: Arcadia
 slug: arcadia
 instrumentation: For violin and piano.
 premiere: November 2, 2020. (Online)
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/arcadia.pdf
 recordings:
   Premiere: https://www.youtube.com/watch?v=pUx57krZ41E
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/arcadia.mp3

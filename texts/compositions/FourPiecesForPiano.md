@@ -2,6 +2,7 @@
 title: Four Pieces for Piano
 slug: four-pieces-for-piano
 instrumentation: For solo piano.
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/four-pieces-for-piano.pdf
 date: 2019-05-01
 categories: 
   - Solo

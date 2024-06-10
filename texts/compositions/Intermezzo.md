@@ -1,6 +1,7 @@
 ---
 title: Intermezzo
 slug: intermezzo
+score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/intermezzo.pdf
 instrumentation: For solo piano.
 date: 2015-12-01
 categories:

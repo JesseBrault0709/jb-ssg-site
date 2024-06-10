@@ -19,6 +19,7 @@ import com.jessebrault.site.util.MaybeExternalLink
                 <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
                 <p class="instrumentation">$composition.instrumentation</p>
                 <WhenNotNull item={composition.premiere} render={<p class="premiere">Premiere: $it</p>} />
+                <WhenNotNull item={composition.score} render={<p class="score">Score: <a href={it}>pdf</a></p>} />
                 <WhenNotEmpty items={composition.recordings.entrySet()}>
                     <div class="recordings">
                         <span>Recordings:</span>
