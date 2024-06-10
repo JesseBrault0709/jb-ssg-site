@@ -15,7 +15,7 @@ class MaybeExternalLink extends BaseWebViewComponent {
     }
 
     boolean getIsExternal() {
-        href.startsWith('https://')
+        !href.startsWith('https://jessebrault')
     }
 
 }

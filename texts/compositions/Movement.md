@@ -2,6 +2,9 @@
 title: Movement
 slug: movement
 instrumentation: For violin and piano.
+premiere: April 12, 2013, at St. Olaf College, Northfield, Minnesota.
+recordings:
+  Audio: https://www.youtube.com/watch?v=rMnuC-TNdGU
 date: 2013-04-01
 categories:
   - Chamber

@@ -2,6 +2,11 @@
 title: Near, Under, Far
 slug: near-under-far
 instrumentation: For solo cello.
+premiere: March 2022. (Online)
+recordings:
+  Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/near-under-far.mp3
+externalLinks:
+  'Musaics of the Bay': https://www.musaics.org/stayathomesymposium/51-near-under-far
 shortInfo: Based on <em>Die blaue Eiche</em> by Luc Tuymans.
 date: 2021-03-01
 categories: 

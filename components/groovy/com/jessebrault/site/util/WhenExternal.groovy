@@ -19,7 +19,7 @@ class WhenExternal extends DelegatingWebViewComponent {
     @Override
     protected View getDelegate() {
         return { Writer w ->
-            if (href.startsWith('https://')) {
+            if (!href.startsWith('https://jessebrault')) {
                 def cw = new DefaultComponentWriter(w, context.renderContext, context)
                 cw << render.call()
             }

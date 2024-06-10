@@ -2,6 +2,10 @@
 title: Capriccioso
 slug: capriccioso
 instrumentation: For recorder, violin, and harp.
+premiere: March 10, 2022. (Online)
+recordings:
+  Premiere: https://www.youtube.com/watch?v=TDfhT8TU4Ik
+  Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/capriccioso.mp3
 shortInfo: 'Commissioned by <em>Musaics of the Bay</em> and <em>Miniatures: Mauritshuis</em>.'
 date: 2021-11-01
 categories:

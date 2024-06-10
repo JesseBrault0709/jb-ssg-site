@@ -2,6 +2,7 @@
 title: Sonata Shambhala
 slug: sonata-shambhala
 instrumentation: For solo piano.
+premiere: November 11, 2018, at Marlboro College, Brattleboro, Vermont.
 date: 2018-09-01
 categories:
   - Solo

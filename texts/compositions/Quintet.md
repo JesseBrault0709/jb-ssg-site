@@ -2,6 +2,9 @@
 title: Quintet
 slug: quintet
 instrumentation: For clarinet, violin, viola, cello, and piano.
+premiere: April 12, 2013, at St. Olaf College, Northfield, Minnesota.
+recordings:
+  Audio: https://www.youtube.com/watch?v=F9ZY-8UHhxc
 date: 2013-03-01
 categories:
   - Chamber

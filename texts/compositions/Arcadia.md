@@ -5,7 +5,7 @@ instrumentation: For violin and piano.
 premiere: November 2, 2020. (Online)
 recordings:
   Premiere: https://www.youtube.com/watch?v=pUx57krZ41E
-  Audio: /compositions/arcadia/arcadia.mp3
+  Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/arcadia.mp3
 externalLinks:
   'Musaics of the Bay': https://www.musaics.org/stayathomesymposium/20-arcadia
   Discussion: https://www.youtube.com/watch?v=y52TU2u1BnU

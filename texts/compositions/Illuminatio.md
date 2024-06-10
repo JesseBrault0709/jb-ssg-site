@@ -2,6 +2,7 @@
 title: Illuminatio
 slug: illuminatio
 instrumentation: For solo piano and wind ensemble.
+premiere: March 17, 2013, Cannon Falls, Minnesota.
 date: 2013-02-01
 categories:
   - Wind Ensemble
