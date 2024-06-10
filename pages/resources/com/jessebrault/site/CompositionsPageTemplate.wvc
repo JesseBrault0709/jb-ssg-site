@@ -2,8 +2,18 @@
 package com.jessebrault.site
 
 import com.jessebrault.site.composition.CompositionCategory
+import com.jessebrault.site.util.OpenGraph
 ---
-<StandardPage title={title}>
+<StandardPage
+    title={title}
+    openGraph={<OpenGraph
+        title="Compositions"
+        type="website"
+        image="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg"
+        description="Compositions by Jesse Brault."
+        path="/compositions"
+    />}
+>
     <div class="article-container">
         <article class="compositions">
             <h1>Compositions</h1>

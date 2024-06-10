@@ -7,12 +7,13 @@ score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/capriccioso.pd
 recordings:
   Premiere: https://www.youtube.com/watch?v=TDfhT8TU4Ik
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/capriccioso.mp3
+description: Commissioned by Musaics of the Bay, Capriccioso is a musical response to Carel Fabritius' 1654 painting The Goldfinch.
 shortInfo: 'Commissioned by <em>Musaics of the Bay</em> and <em>Miniatures: Mauritshuis</em>.'
 date: 2021-11-01
 categories:
   - Chamber
 ---
-Capriccioso is a musical response to Carel Fabritius’ 1654 painting _The Goldfinch_, 
+Capriccioso is a musical response to Carel Fabritius' 1654 painting _The Goldfinch_, 
 as well as the history surrounding the painting itself.
 
 Generally, the music is meant to evoke the playfulness of the small bird in the painting. 

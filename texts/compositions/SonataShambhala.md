@@ -6,6 +6,8 @@ premiere: November 11, 2018, at Marlboro College, Brattleboro, Vermont.
 score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/sonata-shambhala.pdf
 externalLinks:
   'Benjamin Hochman Discusses Sonata Shambhala': https://www.youtube.com/watch?v=leyqMdGyr8Q
+description: Written for Benjamin Hochman and based upon The Sacred Path of the Warrior by Chögyam Trungpa, Sonata Shambhala meditates upon the books themes of personal spiritual development.
+shortInfo: Based upon <em>The Sacred Path of the Warrior</em> by Chögyam Trungpa.
 date: 2018-09-01
 categories:
   - Solo

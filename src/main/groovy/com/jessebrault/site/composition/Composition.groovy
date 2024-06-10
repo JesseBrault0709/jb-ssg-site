@@ -21,6 +21,7 @@ class Composition {
     Map<String, String> recordings
     Map<String, String> externalLinks
     @Nullable String shortInfo
+    @Nullable String description
     LocalDate date
     Set<String> categories
 }

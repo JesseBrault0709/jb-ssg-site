@@ -25,6 +25,7 @@ class CompositionContainer {
                     recordings: text.frontMatter.recordings ?: [:],
                     externalLinks: text.frontMatter.externalLinks ?: [:],
                     shortInfo: text.frontMatter.shortInfo,
+                    description: text.frontMatter.description,
                     date: LocalDate.parse(text.frontMatter.date),
                     categories: text.frontMatter.categories as Set<String>
             )

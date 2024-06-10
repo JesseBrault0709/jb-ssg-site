@@ -3,6 +3,8 @@ title: Four Pieces for Piano
 slug: four-pieces-for-piano
 instrumentation: For solo piano.
 score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/four-pieces-for-piano.pdf
+description: Written for Julia Hamos, each of the Four Pieces varies wildly in character.
+shortInfo: Written for Julia Hamos.
 date: 2019-05-01
 categories: 
   - Solo

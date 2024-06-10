@@ -1,6 +1,8 @@
 package com.jessebrault.site.composition
 
 import com.jessebrault.site.util.TitleMaker
+import com.jessebrault.ssg.di.SelfPage
+import com.jessebrault.ssg.page.Page
 import com.jessebrault.ssg.view.WvcPageView
 import groovy.transform.Canonical
 import jakarta.inject.Inject
@@ -16,13 +18,16 @@ class CompositionPage extends WvcPageView {
     }
 
     Composition composition
+    final Page selfPage
+
     private final TitleMaker titleMaker
     private final CompositionContainer compositionContainer
 
     @Inject
-    CompositionPage(TitleMaker titleMaker, CompositionContainer compositionContainer) {
+    CompositionPage(TitleMaker titleMaker, CompositionContainer compositionContainer, @SelfPage Page selfPage) {
         this.titleMaker = titleMaker
         this.compositionContainer = compositionContainer
+        this.selfPage = selfPage
     }
 
     String getTitle() {

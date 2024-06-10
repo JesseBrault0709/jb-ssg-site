@@ -7,6 +7,7 @@ score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/spirit-travels
 recordings:
   'Midi Mockup': https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/spirit-travels-orchestra-midi.mp3
 shortInfo: <em>In memoriam</em> Jane H. Kim.
+description: Written in memoriam Jane H. Kim, Spirit Travels evokes the journeys of one's spirit through this world and the beyond.
 date: 2024-02-20
 categories:
   - Orchestra

@@ -5,7 +5,7 @@ import com.jessebrault.site.icon.SpotifyIcon
 import com.jessebrault.site.icon.YoutubeIcon
 ---
 <html lang="en">
-    <Head title={title} />
+    <Head title={title} openGraph={openGraph} />
     <body>
         <div class="header-banner-container">
             <Header />

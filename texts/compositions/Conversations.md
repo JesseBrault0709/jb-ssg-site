@@ -5,6 +5,8 @@ instrumentation: For two violins.
 premiere: April 3, 2019, at Church of St. Paul the Apostle, New York, New York.
 score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/conversations.pdf
 date: 2017-06-01
+description: For Jocelyn Zhu and Mariella Haubs in commemoration of their 2017 Concerts for Compassion Tour, Conversations depicts a conversation between two people.
+shortInfo: For Jocelyn Zhu and Mariella Haubs in commemoration of their 2017 <em>Concerts for Compassion</em> Tour.
 categories:
   - Chamber
 ---

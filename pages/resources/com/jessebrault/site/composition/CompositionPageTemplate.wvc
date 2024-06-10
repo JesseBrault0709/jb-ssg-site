@@ -3,8 +3,18 @@ package com.jessebrault.site.composition
 
 import com.jessebrault.site.StandardPage
 import com.jessebrault.site.util.MaybeExternalLink
+import com.jessebrault.site.util.OpenGraph
 ---
-<StandardPage title={title}>
+<StandardPage
+    openGraph={<OpenGraph
+        title={composition.title}
+        type="website"
+        image="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg"
+        description={composition.description}
+        path={selfPage.path}
+    />}
+    title={title}
+>
     <div class="article-container">
         <a id="back-to-compositions" href="/compositions">Back to compositions</a>
         <article>

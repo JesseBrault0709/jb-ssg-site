@@ -8,6 +8,7 @@ recordings:
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/near-under-far.mp3
 externalLinks:
   'Musaics of the Bay': https://www.musaics.org/stayathomesymposium/51-near-under-far
+description: Based on Die blaue Eiche by Luc Tuymans, Near, Under, Far musically expresses the painting's loneliness and angularity. 
 shortInfo: Based on <em>Die blaue Eiche</em> by Luc Tuymans.
 date: 2021-03-01
 categories: 

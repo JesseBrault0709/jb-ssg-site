@@ -1,6 +1,5 @@
 package com.jessebrault.site.composition
 
-import com.jessebrault.site.CompositionsPage
 import com.jessebrault.ssg.page.Page
 import com.jessebrault.ssg.page.PageFactory
 import com.jessebrault.ssg.view.WvcCompiler

@@ -1,0 +1,8 @@
+---
+package com.jessebrault.site.util
+---
+<meta property="og:title" content={title} />
+<meta property="og:type" content={type} />
+<meta property="og:image" content={image} />
+<WhenNotNull item={description} render={<meta property="og:description" content={it} />} />
+<meta property="og:url" content={url} />

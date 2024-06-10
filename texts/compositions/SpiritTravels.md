@@ -8,11 +8,12 @@ score: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/scores/spirit-travels
 recordings:
   Audio: https://jessebrault.nyc3.cdn.digitaloceanspaces.com/recordings/spirit-travels.mp3
 shortInfo: <em>In memoriam</em> Jane H. Kim.
+description: Written in memoriam Jane H. Kim, Spirit Travels evokes the journeys of one's spirit through this world and the beyond.
 date: 2023-12-01
 categories:
   - Chamber
 ---
-_Spirit Travels_ evokes the journeys of one’s spirit through this world and the beyond. 
+_Spirit Travels_ evokes the journeys of one's spirit through this world and the beyond. 
 It is a tone poem in two consecutive parts: the first is bright, colorful, and energetic,
 while the second is introspective and lyrical (and prominently features the piano). 
 Beside many common musical motives, a noble horn melody links both parts, suggesting both 

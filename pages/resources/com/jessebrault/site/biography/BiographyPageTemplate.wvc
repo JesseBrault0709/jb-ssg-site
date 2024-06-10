@@ -2,8 +2,20 @@
 package com.jessebrault.site.biography
 
 import com.jessebrault.site.StandardPage
+import com.jessebrault.site.util.OpenGraph
 ---
-<StandardPage title={title} banner={<BiographyBanner />} pageScripts={['/biography.js']}>
+<StandardPage
+    title={title}
+    openGraph={<OpenGraph
+        title="Biography"
+        type="website"
+        image="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg"
+        description={"Conductor and composer Jesse Brault studied orchestral conducting at the Juilliard School with Maestros Alan Gilbert and James Ross."}
+        path="/"
+    />}
+    banner={<BiographyBanner />}
+    pageScripts={['/biography.js']}
+>
     <div class="article-container">
         <article id="biography-article">
             <%= renderBiography() %>

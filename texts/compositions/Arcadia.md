@@ -10,13 +10,14 @@ recordings:
 externalLinks:
   'Musaics of the Bay': https://www.musaics.org/stayathomesymposium/20-arcadia
   Discussion: https://www.youtube.com/watch?v=y52TU2u1BnU
+description: Commissioned by Musaics of the Bay, Arcadia was written in response to June Yokell's painting Paradise Lost.
 shortInfo: 'Commissioned by <em>Musaics of the Bay</em>.'
 date: 2020-10-01
 categories:
   - Chamber
 ---
 _Arcadia_ was commissioned by _Musaics of the Bay_ and written in response to June 
-Yokell's painting entitled _Paradise Lost_. 
+Yokell's painting _Paradise Lost_. 
 
 When I first saw her painting, I knew immediately that I must compose music from it. 
 The colors of the landscape spoke to me directly, reminding me of the geography of 

@@ -2,8 +2,20 @@
 package com.jessebrault.site.contact
 
 import com.jessebrault.site.StandardPage
+import com.jessebrault.site.util.OpenGraph
 ---
-<StandardPage title={title} banner={<ContactBanner />} pageScripts={['/contact.js']}>
+<StandardPage
+    title={title}
+    openGraph={<OpenGraph
+        title="Contact"
+        type="website"
+        image="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait2.jpg"
+        description="Contact information for Jesse Brault."
+        path="/contact"
+    />}
+    banner={<ContactBanner />}
+    pageScripts={['/contact.js']}
+>
     <div class="article-container">
         <article class="contact">
             <h1>Contact</h1>

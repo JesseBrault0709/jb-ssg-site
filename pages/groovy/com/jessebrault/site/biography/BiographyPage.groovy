@@ -10,13 +10,13 @@ import jakarta.inject.Inject
 @PageSpec(name = 'Biography', path = '/')
 class BiographyPage extends WvcPageView {
 
+    final Text biography
     private final TitleMaker titleMaker
-    private final Text biography
 
     @Inject
     BiographyPage(TitleMaker titleMaker, @InjectText('/Biography.md') Text biography) {
-        this.titleMaker = titleMaker
         this.biography = biography
+        this.titleMaker = titleMaker
     }
 
     String renderBiography() {

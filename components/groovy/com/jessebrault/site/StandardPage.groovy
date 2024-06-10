@@ -4,6 +4,7 @@ import com.jessebrault.ssg.di.Global
 import groowt.view.component.web.BaseWebViewComponent
 import groowt.view.component.web.WebViewComponent
 import jakarta.inject.Inject
+import org.jetbrains.annotations.Nullable
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -13,6 +14,7 @@ class StandardPage extends BaseWebViewComponent {
     final String spotifyUrl
     final String youtubeUrl
     final String title
+    final @Nullable Closure<WebViewComponent> openGraph
     final Closure<WebViewComponent> banner
     final List<String> pageScripts
 
@@ -21,6 +23,7 @@ class StandardPage extends BaseWebViewComponent {
         this.spotifyUrl = spotifyUrl
         this.youtubeUrl = youtubeUrl
         this.title = attr.title
+        this.openGraph = attr.openGraph
         this.banner = attr.banner ?: { '' }
         this.pageScripts = attr.pageScripts ?: []
     }
