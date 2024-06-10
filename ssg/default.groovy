@@ -20,6 +20,7 @@ build {
         youtubeUrl = 'https://www.youtube.com/@JesseBrault0709'
         linkedInUrl = 'https://www.linkedin.com/in/jessebrault0709/'
         githubUrl = 'https://github.com/JesseBrault0709'
+        openGraphFallbackImage = 'https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait3.jpg'
     }
     objectFactoryBuilder.configure {
         configureRegistry {

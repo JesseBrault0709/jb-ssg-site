@@ -1,5 +1,6 @@
 package com.jessebrault.site.util
 
+import com.jessebrault.ssg.di.Global
 import groowt.view.component.web.BaseWebViewComponent
 import jakarta.inject.Inject
 import jakarta.inject.Named
@@ -16,11 +17,11 @@ class OpenGraph extends BaseWebViewComponent {
     private final String path
 
     @Inject
-    OpenGraph(@Named('baseUrl') String baseUrl, Map attr) {
+    OpenGraph(@Named('baseUrl') String baseUrl, @Global('openGraphFallbackImage') String fallbackImage, Map attr) {
         this.baseUrl = baseUrl
         title = attr.title
         type = attr.type
-        image = attr.image
+        image = attr.image ?: fallbackImage
         description = attr.description
         path = attr.path
     }

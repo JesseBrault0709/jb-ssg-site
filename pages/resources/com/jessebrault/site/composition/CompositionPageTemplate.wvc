@@ -9,7 +9,6 @@ import com.jessebrault.site.util.OpenGraph
     openGraph={<OpenGraph
         title={composition.title}
         type="website"
-        image="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg"
         description={composition.description}
         path={selfPage.path}
     />}
