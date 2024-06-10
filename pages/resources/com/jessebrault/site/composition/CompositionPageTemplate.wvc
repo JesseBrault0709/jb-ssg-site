@@ -2,6 +2,7 @@
 package com.jessebrault.site.composition
 
 import com.jessebrault.site.StandardPage
+import com.jessebrault.site.util.MaybeExternalLink
 ---
 <StandardPage title={title}>
     <div class="article-container">
@@ -17,11 +18,37 @@ import com.jessebrault.site.StandardPage
                 </div>
                 <WhenNotNull item={composition.version} render={<p class="version">$it</p>} />
                 <p class="instrumentation">$composition.instrumentation</p>
+                <WhenNotNull item={composition.premiere} render={<p class="premiere">Premiere: $it</p>} />
+                <WhenNotEmpty items={composition.recordings.entrySet()}>
+                    <div class="recordings">
+                        <span>Recordings:</span>
+                        <ul>
+                            <Each
+                                items={composition.recordings.entrySet()}
+                                transform={<li><MaybeExternalLink href={it.value}>$it.key</MaybeExternalLink></li>}
+                            />
+                        </ul>
+                    </div>
+                </WhenNotEmpty>
+                <WhenNotEmpty items={composition.externalLinks.entrySet()}>
+                    <div class="external-links">
+                        <span>External links:</span>
+                        <ul>
+                            <Each
+                                items={composition.externalLinks.entrySet()}
+                                transform={<li><MaybeExternalLink href={it.value}>$it.key</MaybeExternalLink></li>}
+                            />
+                        </ul>
+                    </div>
+                </WhenNotEmpty>
                 <WhenNotEmpty items={alternateVersions}>
                     <div class="alternate-versions">
-                        <p>Alternate versions:</p>
+                        <span>Alternate versions:</span>
                         <ul>
-                            <Each items={alternateVersions} transform={<li><a href={it.path}>${it.versionName}</a></li>} />
+                            <Each
+                                items={alternateVersions}
+                                transform={<li><a href={it.path}>${it.versionName}</a></li>}
+                            />
                         </ul>
                     </div>
                 </WhenNotEmpty>

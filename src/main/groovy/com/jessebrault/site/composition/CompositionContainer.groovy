@@ -20,6 +20,10 @@ class CompositionContainer {
                     subTitle: text.frontMatter.subTitle,
                     version: text.frontMatter.version,
                     instrumentation: text.frontMatter.instrumentation,
+                    premiere: text.frontMatter.premiere,
+                    pdfUrl: text.frontMatter.pdfUrl,
+                    recordings: text.frontMatter.recordings ?: [:],
+                    externalLinks: text.frontMatter.externalLinks ?: [:],
                     shortInfo: text.frontMatter.shortInfo,
                     date: LocalDate.parse(text.frontMatter.date),
                     categories: text.frontMatter.categories as Set<String>

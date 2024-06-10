@@ -1,0 +1,11 @@
+---
+package com.jessebrault.site.util
+
+import com.jessebrault.site.icon.ExternalIcon
+---
+<a href={href} target={isExternal ? '_blank' : '_self'}>
+    <span>
+        <% children -> children.addAll(linkChildren) %>
+        <WhenExternal href={href} render={<ExternalIcon />} />
+    </span>
+</a>

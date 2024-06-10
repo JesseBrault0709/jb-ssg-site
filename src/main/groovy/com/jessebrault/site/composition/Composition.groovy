@@ -16,6 +16,10 @@ class Composition {
     @Nullable String subTitle
     @Nullable String version
     String instrumentation
+    @Nullable String premiere
+    @Nullable String pdfUrl
+    Map<String, String> recordings
+    Map<String, String> externalLinks
     @Nullable String shortInfo
     LocalDate date
     Set<String> categories

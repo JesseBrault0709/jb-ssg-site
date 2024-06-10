@@ -306,14 +306,26 @@ article.compositions {
     font-size: 1.5em;
 }
 
-.composition-info .alternate-versions {
+.composition-info :is(.recordings, .external-links, .alternate-versions) {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.composition-info .alternate-versions ul {
+.composition-info :is(.recordings, .external-links, .alternate-versions) ul {
     margin: 0;
+}
+
+.composition-info :is(.recordings, .external-links, .alternate-versions) a span {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.composition-info :is(.recordings, .external-links, .alternate-versions) span svg {
+    pointer-events: none;
+    height: 0.8em;
+    fill: var(--petrol);
 }
 
 .composition-text p:first-child {
