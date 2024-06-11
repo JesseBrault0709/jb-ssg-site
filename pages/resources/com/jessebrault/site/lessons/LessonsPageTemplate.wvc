@@ -1,0 +1,22 @@
+---
+package com.jessebrault.site.lessons
+
+import com.jessebrault.site.StandardPage
+import com.jessebrault.site.util.OpenGraph
+---
+<StandardPage
+    title={pageTitle}
+    description={description}
+    openGraph={<OpenGraph
+        title={selfPage.name}
+        description={description}
+        path={selfPage.path}
+    />}
+    banner={<LessonsBanner />}
+>
+    <div class="article-container">
+        <article id="lessons-article">
+            <%= renderLessons() %>
+        </article>
+    </div>
+</StandardPage>

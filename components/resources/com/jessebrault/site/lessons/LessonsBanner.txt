@@ -1,0 +1,11 @@
+<div id="lessons-banner" class="landscape-banner">
+    <div class="landscape-photo-container">
+        <img
+            src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/jesse-brault-bratislava.jpg"
+            class="landscape-photo"
+        />
+    </div>
+    <div id="lessons-banner-text" class="banner-text">
+        <p>Now offering lessons to students of all ages!</p>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div id="videos-banner" class="banner">
+    <div class="headshot-container">
+        <img
+            src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait4.jpg"
+            class="headshot"
+        />
+    </div>
+    <div id="videos-banner-text" class="banner-text">
+        <p>
+            Click <a href="https://www.youtube.com/watch?v=Z46hkMmBtiY">here</a>
+            for a portfolio video, or scroll below for individual works.
+        </p>
+    </div>
+</div>

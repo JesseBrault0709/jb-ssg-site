@@ -20,7 +20,7 @@ class OpenGraph extends BaseWebViewComponent {
     OpenGraph(@Named('baseUrl') String baseUrl, @Global('openGraphFallbackImage') String fallbackImage, Map attr) {
         this.baseUrl = baseUrl
         title = attr.title
-        type = attr.type
+        type = attr.type ?: 'website'
         image = attr.image ?: fallbackImage
         description = attr.description
         path = attr.path

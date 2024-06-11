@@ -29,6 +29,7 @@ body {
 
 header {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 15px 25px;
     color: var(--off-white);
@@ -36,7 +37,8 @@ header {
 
 header .titles {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    column-gap: 15px;
 }
 
 header .titles * {
@@ -88,19 +90,22 @@ nav a:hover {
     color: var(--off-white);
 }
 
-.banner {
+.banner,
+.landscape-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
     color: var(--off-white);
 }
 
-.banner > * {
+:is(.banner, .landscape-banner) > * {
     width: 100%;
 }
 
 .banner-text {
-    padding: 25px;
+    padding-inline: 20px;
     letter-spacing: 0.1em;
 }
 
@@ -135,6 +140,15 @@ article h2 {
 
 article h3 {
     font-size: 1em;
+}
+
+article ul {
+    padding-inline: 40px;
+    text-align: left;
+}
+
+article ul li {
+    padding-block: 4px;
 }
 
 footer {
@@ -180,13 +194,15 @@ a:hover {
     color: rgba(from var(--petrol) r g b / 0.5);
 }
 
-.headshot-container {
+.headshot-container,
+.landscape-photo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headshot {
+.headshot,
+.landscape-photo {
     width: 100%;
 }
 
@@ -332,6 +348,19 @@ article.compositions {
     margin-block-start: 2em;
 }
 
+#lessons-banner-text,
+#videos-banner-text {
+    text-align: center;
+}
+
+#videos-banner-text :is(a, a:visited) {
+    color: var(--light-gray);
+}
+
+#videos-banner-text a:hover {
+    color: var(--off-white);
+}
+
 .contact-banner article.social-media-links {
     font-family: var(--gothic);
 }
@@ -443,52 +472,32 @@ form.contact {
     color: red;
 }
 
-@media screen and (max-width: 767px) {
-    nav ul {
-        position: absolute;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-        background-color: var(--petrol);
-        padding: 20px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     html {
         font-size: 18px;
     }
 
     header {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
         padding-inline: 30px;
     }
 
-    nav .bars-wrapper {
-        display: none;
+    header .titles h2 {
+        display: unset;
+        font-size: 2em;
+        font-size: 18px;
+        letter-spacing: 0.15em;
     }
 
-    nav ul {
-        display: flex;
-    }
-
-    .banner {
+    .banner,
+    .landscape-banner {
         flex-direction: unset;
-    }
-
-    .banner > * {
-        padding: 15px 30px 30px;
+        padding: 0 30px 30px;
+        gap: 30px;
     }
 
     .banner-text {
+        padding-inline: unset;
         letter-spacing: 0.15em;
-        padding-top: 30px;
     }
 
     article h1 {
@@ -553,10 +562,32 @@ form.contact {
         align-items: baseline;
         justify-content: space-between;
     }
+
+    #lessons-banner-text,
+    #videos-banner-text {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    nav ul {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        padding: 20px;
+        background-color: var(--petrol);
+        border-bottom: 1px solid var(--charcoal);
+    }
 }
 
 @media screen and (min-width: 1024px) {
     header {
+        align-items: center;
         padding-inline: 50px;
     }
 
@@ -565,9 +596,28 @@ form.contact {
         letter-spacing: 0.175em;
     }
 
-    .banner > * {
-        padding-inline: 50px;
-        padding-bottom: 50px;
+    header .titles h2 {
+        display: none;
+    }
+
+    nav .bars-wrapper {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .banner,
+    .landscape-banner {
+        padding: 0 50px 50px;
+        gap: 50px;
+    }
+
+    .landscape-banner {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
     }
 
     footer {
@@ -587,20 +637,16 @@ form.contact {
     .biography-banner .blurb-container button {
         display: unset;
     }
+
+    #lessons-banner-text,
+    #videos-banner-text {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    header .titles {
-        flex-direction: unset;
-        align-items: baseline;
-        column-gap: 15px;
-    }
-
     header .titles h2 {
         display: unset;
-        font-size: 2em;
-        font-size: 18px;
-        letter-spacing: 0.15em;
     }
 
     .contact-banner svg {
