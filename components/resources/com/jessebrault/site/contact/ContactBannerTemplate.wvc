@@ -10,10 +10,10 @@ import com.jessebrault.site.icon.*
     <article class="banner-text social-media-links">
         <h1>Social Media</h1>
         <div class="social-media-links">
-            <a href={spotifyUrl}><SpotifyIcon /><span>Spotify Profile</span></a>
-            <a href={youtubeUrl}><YoutubeIcon /><span>Youtube Channel</span></a>
-            <a href={linkedInUrl}><LinkedInIcon /><span>LinkedIn Profile</span></a>
-            <a href={githubUrl}><GithubIcon /><span>Github Profile</span></a>
+            <a href={spotifyUrl} target="_blank"><SpotifyIcon /><span>Spotify Profile</span></a>
+            <a href={youtubeUrl} target="_blank"><YoutubeIcon /><span>Youtube Channel</span></a>
+            <a href={linkedInUrl} target="_blank"><LinkedInIcon /><span>LinkedIn Profile</span></a>
+            <a href={githubUrl} target="_blank"><GithubIcon /><span>Github Profile</span></a>
         </div>
     </article>
 </div>
