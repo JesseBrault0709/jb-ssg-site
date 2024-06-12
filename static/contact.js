@@ -78,7 +78,7 @@ window.addEventListener('load', () => {
                 },
                 method: 'POST'
             })
-                .then(function (response) {
+                .then(response => {
                     if (response.status === 400) {
                         response.json().then(body => {
                             body.errors.forEach(({ field, message }) => {
