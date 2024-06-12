@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
     const nameInput = document.getElementById('name-input')
     const emailInput = document.getElementById('email-input')
     const messageInput = document.getElementById('message-input')
-    const submitInput = this.document.getElementById('submit-input')
+    const submitInput = document.getElementById('submit-input')
 
     const validateName = () => {
         if (nameInput.validity.valid) {
