@@ -1,5 +1,6 @@
 package com.jessebrault.site;
 
+import org.eclipse.jetty.http.HttpHeader;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Response;
@@ -13,11 +14,21 @@ import java.util.regex.Pattern;
 
 public final class JbHandler extends Handler.Abstract {
 
-    private static final Pattern extensionPattern = Pattern.compile(".*\\..+$");
+    private static final Pattern hasExtensionPattern = Pattern.compile(".*\\..+$");
+    private static final Pattern getExtensionPattern = Pattern.compile(".*(\\..+)$");
 
     private static boolean hasExtension(String path) {
-        final var m = extensionPattern.matcher(path);
+        final var m = hasExtensionPattern.matcher(path);
         return m.matches();
+    }
+
+    private static String getExtension(Path resolved) {
+        final var m = getExtensionPattern.matcher(resolved.toString());
+        if (m.matches()) {
+            return m.group(1);
+        } else {
+            throw new IllegalArgumentException("Could not determine extension for: " + resolved);
+        }
     }
 
     private final Set<Path> bases;
@@ -48,6 +59,15 @@ public final class JbHandler extends Handler.Abstract {
         for (final Path base : this.bases) {
             final Path resolved = base.resolve(relative);
             if (Files.exists(resolved)) {
+                final var contentType = switch (getExtension(resolved)) {
+                    case ".html" -> "text/html";
+                    case ".js" -> "text/javascript";
+                    case ".css" -> "text/css";
+                    case ".png" -> "image/png";
+                    case ".ico" -> "image/vnd.microsoft.icon";
+                    default -> "text/plain";
+                };
+                response.getHeaders().add(HttpHeader.CONTENT_TYPE, contentType);
                 try (final var inputStream = Files.newInputStream(resolved)) {
                     final ByteBuffer byteBuffer = ByteBuffer.wrap(inputStream.readAllBytes());
                     response.write(true, byteBuffer, callback);
