@@ -18,10 +18,5 @@ package com.jessebrault.site
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="preload" as="image" href="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg" />
-    <link rel="preload" as="image" href="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait2.jpg" />
-    <link rel="preload" as="image" href="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait4.jpg" />
-    <link rel="preload" as="image" href="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/jesse-brault-bratislava.jpg" />
-
     <link rel="stylesheet" href="/main.css" />
 </head>
