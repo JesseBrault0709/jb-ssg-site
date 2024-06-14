@@ -5,7 +5,10 @@ import com.jessebrault.site.icon.*
 ---
 <div class="banner contact-banner">
     <div class="headshot-container">
-        <img src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait2.jpg" class="headshot" />
+        <img
+            src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait2.jpg"
+            class="headshot portrait-photo"
+        />
     </div>
     <article class="banner-text social-media-links">
         <h1>Social Media</h1>

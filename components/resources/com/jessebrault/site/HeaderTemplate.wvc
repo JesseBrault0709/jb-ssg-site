@@ -3,7 +3,7 @@ package com.jessebrault.site
 
 import com.jessebrault.site.icon.BarsIcon
 ---
-<header id="header" data-turbo-permanent>
+<header id="header">
     <div class="titles">
         <h1>$siteName</h1>
         <h2>$siteTagLine</h2>
@@ -13,7 +13,9 @@ import com.jessebrault.site.icon.BarsIcon
             <BarsIcon />
         </button>
         <ul id="nav-items">
-            <Each items={menuItems} transform={<li><a class="nav-link" href={it.path}>$it.name</a></li>} />
+            <Each items={menuItems} transform={
+                <li><a class="nav-link" href={it.path}>$it.name</a></li>}
+            />
         </ul>
     </nav>
 </header>

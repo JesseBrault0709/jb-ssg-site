@@ -2,7 +2,7 @@
     <div class="landscape-photo-container">
         <img
             src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/jesse-brault-bratislava.jpg"
-            class="landscape-photo"
+            class="headshot landscape-photo"
         />
     </div>
     <div id="lessons-banner-text" class="banner-text">

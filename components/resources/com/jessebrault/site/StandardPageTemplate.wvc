@@ -22,7 +22,6 @@ import com.jessebrault.site.icon.YoutubeIcon
             <p>Copyright $copyrightYear Jesse R. Brault. All rights reserved.</p>
         </footer>
         <script src="/main.js"></script>
-        <script src="turbo.es2017-esm.js" type="module"></script>
         <Each items={pageScripts} transform={<script src={it}></script>} />
     </body>
 </html>

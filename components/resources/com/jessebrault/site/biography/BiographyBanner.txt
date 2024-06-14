@@ -1,6 +1,9 @@
 <div class="banner biography-banner">
     <div class="headshot-container">
-        <img src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg" class="headshot" />
+        <img
+            src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg"
+            class="headshot portrait-photo"
+        />
     </div>
     <div class="banner-text blurb-container">
         <p id="jesse-brault-name">Jesse Brault</p>

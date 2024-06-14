@@ -2,7 +2,7 @@
     <div class="headshot-container">
         <img
             src="https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait4.jpg"
-            class="headshot"
+            class="headshot portrait-photo"
         />
     </div>
     <div id="videos-banner-text" class="banner-text">
