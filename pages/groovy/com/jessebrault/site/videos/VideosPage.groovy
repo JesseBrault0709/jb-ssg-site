@@ -2,7 +2,6 @@ package com.jessebrault.site.videos
 
 import com.jessebrault.site.util.TitleMaker
 import com.jessebrault.ssg.di.InjectText
-import com.jessebrault.ssg.di.InjectTexts
 import com.jessebrault.ssg.di.SelfPage
 import com.jessebrault.ssg.page.Page
 import com.jessebrault.ssg.page.PageSpec
@@ -16,22 +15,22 @@ class VideosPage extends WvcPageView {
     static final String description = 'Conducting videos of Jesse Brault.'
 
     final Page selfPage
+    final Text videos
     private final TitleMaker titleMaker
-    private final Text videosText
 
     @Inject
-    VideosPage(@SelfPage Page selfPage, TitleMaker titleMaker, @InjectText('/Videos.md') Text videosText) {
+    VideosPage(@SelfPage Page selfPage, TitleMaker titleMaker, @InjectText('/Videos.md') Text videos) {
         this.selfPage = selfPage
         this.titleMaker = titleMaker
-        this.videosText = videosText
+        this.videos = videos
     }
 
-    String getPageTitle() {
-        titleMaker.makeTitle(selfPage.name)
+    String getTitle() {
+        titleMaker.makeTitle(pageTitle)
     }
 
     String renderVideos() {
-        videosText.render()
+        videos.render()
     }
 
 }

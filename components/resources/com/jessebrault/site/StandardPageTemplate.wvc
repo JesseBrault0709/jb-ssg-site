@@ -9,10 +9,10 @@ import com.jessebrault.site.icon.YoutubeIcon
     <body>
         <div class="header-banner-container">
             <Header />
-            <% children -> children << banner() %>
+            <Outlet children={[banner()]} />
         </div>
         <main>
-            <% children -> mainChildren.each { children << it } %>
+            <Outlet children={mainChildren} />
         </main>
         <footer>
             <div class="social-icons">

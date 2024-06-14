@@ -2,7 +2,6 @@ package com.jessebrault.site.lessons
 
 import com.jessebrault.site.util.TitleMaker
 import com.jessebrault.ssg.di.InjectText
-import com.jessebrault.ssg.di.InjectTexts
 import com.jessebrault.ssg.di.SelfPage
 import com.jessebrault.ssg.page.Page
 import com.jessebrault.ssg.page.PageSpec
@@ -16,22 +15,22 @@ class LessonsPage extends WvcPageView {
     static final String description = 'Information about lessons offered by Jesse Brault.'
 
     final Page selfPage
+    final Text lessons
     private final TitleMaker titleMaker
-    private final Text lessonsText
 
     @Inject
-    LessonsPage(@SelfPage Page selfPage, TitleMaker titleMaker, @InjectText('/Lessons.md') Text lessonsText) {
+    LessonsPage(@SelfPage Page selfPage, TitleMaker titleMaker, @InjectText('/Lessons.md') Text lessons) {
         this.selfPage = selfPage
         this.titleMaker = titleMaker
-        this.lessonsText = lessonsText
+        this.lessons = lessons
     }
 
-    String getPageTitle() {
-        titleMaker.makeTitle(selfPage.name)
+    String getTitle() {
+        titleMaker.makeTitle(pageTitle)
     }
 
     String renderLessons() {
-        this.lessonsText.render()
+        this.lessons.render()
     }
 
 }

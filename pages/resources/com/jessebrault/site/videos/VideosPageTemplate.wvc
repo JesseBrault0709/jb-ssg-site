@@ -5,10 +5,10 @@ import com.jessebrault.site.StandardPage
 import com.jessebrault.site.util.OpenGraph
 ---
 <StandardPage
-    title={pageTitle}
+    title={title}
     description={description}
     openGraph={<OpenGraph
-        title={selfPage.name}
+        title={pageTitle}
         description={description}
         path={selfPage.path}
     />}
@@ -16,7 +16,7 @@ import com.jessebrault.site.util.OpenGraph
 >
     <div class="article-container">
         <article id="videos-article">
-            <%= renderVideos() %>
+            <Render item={videos} />
         </article>
     </div>
 </StandardPage>

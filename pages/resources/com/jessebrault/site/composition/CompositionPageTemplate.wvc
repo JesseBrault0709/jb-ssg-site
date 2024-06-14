@@ -65,7 +65,7 @@ import com.jessebrault.site.util.OpenGraph
                 </WhenNotEmpty>
             </section>
             <section class="composition-text">
-                ${composition.text.render()}
+                <Render item={composition.text} />
             </section>
         </article>
     </div>
