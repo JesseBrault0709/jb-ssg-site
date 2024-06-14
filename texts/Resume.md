@@ -8,7 +8,7 @@ For an official up-to-date résumé/CV, please [contact](/contact) me directly.
 ## Education
 - **Master of Music**, Orchestral Conducting. The Juilliard School. 2015–2018.
   - Private Teachers: Alan Gilbert, James Ross
-  - Guest teachers: Bernard Haitink, Gianandrea Noseda, David Zinman, Fabio Luisi
+  - Guest teachers: Bernard Haitink, Gianandrea Noseda, David Zinman, Fabio Luisi, James Gaffigan.
   - Relevant coursework: score reading, counterpoint, harmony, history.
 - **Bachelor of Music**, Theory and Composition. St. Olaf College. *Summa cum laude*. 2009–2013.
   - Private Teachers: Steven Amundson, Timothy Mahr, Justin Merritt.
