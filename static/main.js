@@ -1,3 +1,15 @@
+const registerServiceWorker = async () => {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('/serviceWorker.js', { scope: '/' })
+        } catch (error) {
+            console.error(`Service worker registration failed: ${error}`)
+        }
+    }
+}
+
+registerServiceWorker()
+
 window.addEventListener('load', () => {
     const navBars = document.getElementById('nav-bars')
     const navItems = document.getElementById('nav-items')
