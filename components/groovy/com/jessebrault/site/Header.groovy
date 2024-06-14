@@ -10,18 +10,15 @@ import jakarta.inject.Named
 class Header extends BaseWebViewComponent {
 
     final String siteName
-    final String siteTagLine
     final List<Page> menuItems
 
     @Inject
     Header(
             @Named('siteName') String siteName,
-            @Global('siteTagLine') String siteTagLine,
             @Global('menuItems') List<String> menuItems,
             @InjectPages('/*') Set<Page> allPages
     ) {
         this.siteName = siteName
-        this.siteTagLine = siteTagLine
         this.menuItems = menuItems.collect { menuItem ->
             allPages.find { it.name == menuItem }
         }

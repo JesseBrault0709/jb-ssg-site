@@ -1,0 +1,21 @@
+---
+package com.jessebrault.site.resume
+
+import com.jessebrault.site.StandardPage
+import com.jessebrault.site.util.OpenGraph
+---
+<StandardPage
+    title={title}
+    description={description}
+    openGraph={<OpenGraph
+        title={pageTitle}
+        description={description}
+        path={selfPage.path}
+    />}
+>
+    <div class="article-container">
+        <article id="resume-article">
+            <Render item={resume} />
+        </article>
+    </div>
+</StandardPage>

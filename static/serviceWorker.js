@@ -1,6 +1,6 @@
 const addResourcesToCache = async () => {
     const cache = await caches.open('v1')
-    cache.addAll(['/', '/compositions', '/videos', '/lessons', '/contact'])
+    cache.addAll(['/', '/compositions', '/videos', '/lessons', '/resume', '/developer', '/contact'])
     ;[
         'https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait1.jpg',
         'https://jessebrault.nyc3.cdn.digitaloceanspaces.com/images/portrait2.jpg',

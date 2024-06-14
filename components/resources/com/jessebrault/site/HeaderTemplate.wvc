@@ -6,7 +6,6 @@ import com.jessebrault.site.icon.BarsIcon
 <header id="header">
     <div class="titles">
         <h1>$siteName</h1>
-        <h2>$siteTagLine</h2>
     </div>
     <nav>
         <button id="nav-bars" class="bars-wrapper">

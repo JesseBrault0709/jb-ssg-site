@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
     const navItems = document.getElementById('nav-items')
 
     const toggleMenu = () => {
-        if (window.matchMedia('screen and (max-width: 1023px)').matches) {
+        if (window.matchMedia('screen and (max-width: 1199px)').matches) {
             if (navItems.style.display === 'flex') {
                 navItems.style.display = 'none'
             } else {

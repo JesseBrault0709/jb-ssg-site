@@ -14,7 +14,7 @@ build {
     basePackage 'com.jessebrault.site'
     globals {
         siteTagLine = 'Conductor, Composer, Developer'
-        menuItems = ['Biography', 'Compositions', 'Videos', 'Lessons', 'Contact']
+        menuItems = ['Biography', 'Compositions', 'Videos', 'Lessons', 'Résumé', 'Developer', 'Contact']
         compositionCategories = ['Orchestra', 'Chamber', 'Solo', 'Wind Ensemble']
         spotifyUrl = 'https://open.spotify.com/artist/4ea1gZnLlQTrXKIMsnlr45?si=DfR-KCDyTiycbjmYwu566w'
         youtubeUrl = 'https://www.youtube.com/@JesseBrault0709'
